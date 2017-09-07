@@ -35,25 +35,24 @@
 	&__footer
 		display: flex
 		justify-content: space-between
-		+r(800)
-			flex-wrap: wrap
-			align-items: center
-			justify-content: center
+		+r(400)
+			align-self: flex-start
 	&__link
 		position: relative
 		display: inline-block
 		padding-bottom: 1.5em
 		margin-right: 60px
 		border-bottom: 1px solid $text
-		font-size: $fz
 		padding-right: 40px
 		color: $text
 		+al
 		+tr(.4s)
 		+r(650)
-			display: block
-			margin: 0 0 20px
-
+			margin-right: 20px
+			padding-right: 20px
+		+r(340)
+			margin-right: 10px
+			padding-right: 18px
 		&:hover
 			color: $blue
 			border-color: $blue
@@ -65,23 +64,26 @@
 	.parallax
 		position: absolute
 		top: 300px
-		right: 80px
+		left: 460px
 		height: calc(100% - 130px)
 		max-height: 100%
 		+r(1070)
+			left: auto
+			right: -380px
 			opacity: .5
 		+r(880)
 			position: absolute
 			top: auto
 			bottom: 0
 			right: -300px
-		+r(650)
+		+r(400)
+			right: -240px
+		+r(320)
 			right: -150px
 
 .timer
 	margin-bottom: 50px
 	&__desc
-		font-size: $fz
 		color: $text
 		margin-bottom: 0
 		+al
@@ -108,6 +110,8 @@
 		font-size: 16px
 		color: #5E5D5D
 		+al
+		+r(650)
+			font-size: 13px
 	&__span
 		display: inline-block
 		vertical-align: top
@@ -119,6 +123,8 @@
 		letter-spacing: .02em
 		color: $text
 		+al
+		+r(650)
+			font-size: 16px
 		&_blue
 			width: 80%
 			color: $blue
@@ -128,9 +134,11 @@
 				width: 100%
 		&_small
 			font-size: 16px
+			+r(650)
+				font-size: 13px
 		&_upper
 			display: inline-block
-			font-size: $fz
+
 			margin-right: 26px
 			text-transform: uppercase
 	&-box
@@ -139,9 +147,13 @@
 	&-dark
 		padding: 90px 0
 		background-color: $grayDark
+		+r(650)
+			padding: 40px 0
 	&-light
 		padding: 90px 0
 		background-color: $grayLight
+		+r(650)
+			padding: 40px 0
 	&-inner
 		display: flex
 		align-items: center
@@ -160,11 +172,18 @@
 		+r(1070)
 			text-indent: 0
 			margin-bottom: 30px
+		+r(650)
+			margin-right: 30px
+			font-size: 30px
+		+r(400)
+			margin-right: 14px
 		&:nth-of-type(2n)
 			margin-right: 0
 
 .slide
 	margin: 90px 0 20px
+	+r(650)
+		margin-top: 40px
 	&__item
 		max-width: 70vw
 		margin-right: 20px
@@ -174,6 +193,8 @@
 		position: relative
 		overflow: hidden
 		margin-bottom: 40px
+		+r(650)
+			margin-bottom: 20px
 	&__img
 		min-width: 100%
 		min-height: 100%
@@ -187,6 +208,8 @@
 		+tr(.4s)
 		+r(880)
 			padding-right: 80px
+		+r(650)
+			padding: 0
 	&__num
 		display: inline-block
 		width: 64px
@@ -194,16 +217,22 @@
 		color: $text
 		font-size: 16px
 		+ab
+		+r(650)
+			display: none
 	&__desc
 		display: inline-block
 		width: calc(90% - 65px)
 		border-left: 1px solid $border
 		padding-left: 36px
-		font-size: $fz
 		color: $text
 		+al
 		+r(880)
 			width: 100%
+		+r(650)
+			border: none
+			padding-left: 0
+	.slick-list
+		margin-right: -20px
 	&.slick-slider
 		.slick-current
 			.slide__img
@@ -216,16 +245,22 @@
 	position: absolute
 	top: 100px
 	left: -200px
+	max-height: 500px
+	+r(1070)
+		top: 130px
+		max-height: 460px
 	+r(880)
+		position: relative
+		margin-top: 20px
 		top: 0
-		max-width: 140%
+		max-width: 160%
 
 .column
 	margin-top: 480px
 	+r(1070)
 		margin-top: 560px
-	+r(800)
-		margin-top: 78vw
+	+r(880)
+		margin-top: 20px
 	&__item
 		display: inline-block
 		vertical-align: top
@@ -242,6 +277,8 @@
 		letter-spacing: .02em
 		+al
 		margin-bottom: 0
+		+r(650)
+			font-size: 13px
 
 .details
 	&__item
@@ -288,11 +325,15 @@
 		padding-left: 40vw
 	+r(880)
 		padding-left: 30px
+		padding-bottom: 20px
 	&__item
 		position: relative
 		padding-bottom: 84px
 		padding-left: 90px
 		border-left: 1px solid $blue
+		+r(650)
+			padding-bottom: 44px
+			padding-left: 46px
 		&:last-of-type
 			padding-bottom: 0
 			border: none
@@ -327,13 +368,11 @@
 			&:before
 				background-color: $blue
 	&__desc
-		font-size: $fz
 		color: $blue
 		+al
 	&__date
 		display: inline-block
 		margin-top: 10px
-		font-size: $fz
 		color: $blue
 		+ab
 
@@ -347,7 +386,6 @@
 		margin-bottom: .2em
 		+al
 	&__small
-		font-size: $fz
 		color: $text
 		+al
 
@@ -358,17 +396,21 @@
 	&__desc
 		width: 80%
 		color: #6B6B6B
-		font-size: $fz
 		line-height: 2
 		margin-bottom: 2em
 		+al
 		+r(1070)
 			width: 100%
 			margin-bottom: 1em
+	&__list
+		+r(650)
+			margin-bottom: 2em
 	&__item
 		position: relative
 		margin-bottom: 40px
 		padding-left: 40px
+		+r(650)
+			margin-bottom: 20px
 		&:after
 			content: ''
 			position: absolute
@@ -386,23 +428,28 @@
 	margin: 120px 0 20px
 	+r(1070)
 		margin: 40px 0 30px
+	+r(480)
+		margin: 0 0 30px
 	&__pic
 		position: relative
 		text-align: center
 		z-index: 10
 	&__img
 		display: inline-block
-		max-width: 100%
+		max-width: 76%
+		+r(480)
+			max-width: 60%
 	&__labels
 		+coverdiv
 	&__tip
 		position: absolute
 		display: inline-block
-		font-size: $fz
 		padding: 0 3px 3px
 		color: $text
 		border-bottom: 1px solid $border
 		+al
+		+r(480)
+			font-size: 11px
 		&_01
 			top: 0
 			left: 0
@@ -416,9 +463,14 @@
 				background-color: $border
 				transform-origin: 0 0
 				+rotate(36)
+				+r(480)
+					width: 100px
+					+rotate(18)
 		&_02
 			top: 45px
 			left: 0
+			+r(390)
+				top: 26px
 			&:after
 				content: ''
 				position: absolute
@@ -429,9 +481,28 @@
 				background-color: $border
 				transform-origin: 0 0
 				+rotate(12)
+				+r(520)
+					+rotate(2)
+				+r(480)
+					+rotate(-10)
+				+r(450)
+					+rotate(-15)
+				+r(415)
+					+rotate(-18)
+				+r(390)
+					+rotate(-5)
+				+r(350)
+					+rotate(-10)
+				+r(320)
+					+rotate(-14)
+
 		&_03
 			top: 90px
 			left: 0
+			+r(420)
+				top: 75px
+			+r(390)
+				top: 55px
 			&:after
 				content: ''
 				position: absolute
@@ -442,9 +513,21 @@
 				background-color: $border
 				transform-origin: 0 0
 				+rotate(20)
+				+r(500)
+					+rotate(-20)
+				+r(480)
+					+rotate(-25)
+				+r(420)
+					+rotate(-25)
+				+r(390)
+					+rotate(-10)
+				+r(340)
+					+rotate(-25)
 		&_04
 			bottom: 80px
 			left: 0
+			+r(460)
+				bottom: 20px
 			&:after
 				content: ''
 				position: absolute
@@ -458,6 +541,8 @@
 		&_05
 			top: 60px
 			right: 0
+			+r(480)
+				top: 20px
 			&:after
 				content: ''
 				position: absolute
@@ -477,9 +562,16 @@
 		margin-top: auto
 		margin-bottom: auto
 		padding-left: 14%
+		+r(400)
+			padding-left: 0
 	&__item
 		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 0
 	&__color
+		position: absolute
+		top: 4px
+		left: 0
 		display: inline-block
 		width: 10px
 		height: 10px
@@ -495,9 +587,9 @@
 		// &_yellow
 		// 	background-color: #FFE701
 	&__desc
+		position: relative
 		display: inline-block
-		margin-left: 30px
-		font-size: $fz
+		padding-left: 30px
 		color: $text
 		+al
 
@@ -512,9 +604,6 @@
 		+r(1070)
 			width: 100%
 	&__item
-		// display: flex
-		// align-items: center
-		// justify-content: center
 		position: relative
 		height: 60px
 	&__num
@@ -522,42 +611,87 @@
 		width: 132px
 		height: 60px
 		line-height: 60px
-		font-size: $fz
 		border-right: 1px solid $border
 		text-align: right
 		padding-right: 20px
+		font-size: 16px
+		color: $text
 		+al
+		+r(650)
+			position: absolute
+			top: 22px
+			left: 0
+			font-size: 11px
+			color: #fff
+			border: none
+			height: auto
+			width: auto
+			line-height: 1em
 	&__line
 		display: inline-block
 		width: 0
 		height: 10px
+		+r(650)
+			height: 15px
 		&.is-animated
 			width: calc(100% - 200px)
-			transition: transform .5s .3s, opacity .5s .3s, width .5s .3s,
+			transition: transform .5s .3s, opacity .5s .3s, width .5s .3s
+			+r(650)
+				width: 100%
 			&.w-xl
 				width: calc(80% - 200px)
 				transition: transform .6s .4s, opacity .6s .4s, width .6s .4s
+				+r(650)
+					width: 80%
+					+ .horizontal__pers
+						left: calc(80% - 60px)
 			&.w-l
 				width: calc(60% - 200px)
 				transition: transform .7s .4s, opacity .7s .4s, width .7s .4s
+				+r(650)
+					width: 60%
+					+ .horizontal__pers
+						left: calc(60% - 60px)
 			&.w-m
 				width: calc(40% - 200px)
 				transition: transform .7s .5s, opacity .7s .5s, width .7s .5s
+				+r(650)
+					width: 20%
+					+ .horizontal__pers
+						left: calc(20% - 60px)
 			&.w-z
 				width: 0
+				+ .horizontal__pers
+					left: 0px
+					width: auto
+					padding-left: 5px
+					border-left: 1px solid $border
 	&__pers
 		display: inline-block
 		width: 56px
 		height: 32px
-		font-size: $fz
 		padding-left: 20px
 		text-align: right
 		padding-right: 20px
+		color: $text
+		font-size: 16px
+		+al
+		+r(650)
+			position: absolute
+			top: 2px
+			left: calc(100% - 60px)
+			height: auto
+			padding: 0
+			font-size: 11px
+			color: #fff
+			+ab
 
 .doc
 	margin-bottom: 110px
 	&:last-child
 		margin-bottom: 0
+		+r(650)
+			margin-bottom: 40px
 	&_correct
 		margin-left: -1%
 	&__title
@@ -571,36 +705,67 @@
 	display: inline-block
 	width: 329px
 	margin-right: 20px
+	+r(650)
+		width: 100%
 	&__wrap
 		text-align: center
 		padding: 60px 29px 40px
 		border: 1px solid $border
+		+r(650)
+			border: none
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			padding: 30px 0
+			border-bottom: 1px solid $border
 	&__pic
 		position: relative
 		height: 270px
 		padding: 0 30px
 		overflow: hidden
+		+r(650)
+			height: auto
+			width: auto
+			padding: 0
+			margin-right: 20px
 	&__img
 		position: absolute
 		top: 50%
 		left: 50%
 		transform: translate3d(-50%, -50%, 0)
+		+r(650)
+			position: static
+			transform: none !important
 	&__text
 		border-top: 1px solid $border
 		margin-top: 56px
 		padding-top: 40px
+		+r(650)
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-grow: 1
+			border: none
+			margin: 0
+			padding: 0
 	&__title
 		font-size: 24px
 		line-height: 1
 		color: $text
 		margin-bottom: 10px
 		+al
+		+r(650)
+			margin-bottom: 0
+			font-size: 16px
+			line-height: 20px
 	&__link
 		display: inline-block
-		font-size: $fz
 		text-transform: uppercase
 		color: #888
 		+al
+		+r(650)
+			line-height: 20px
+			margin-left: 30px
 		&:hover
 			color: $blue
 
@@ -640,7 +805,6 @@
 		border: 1px solid $border
 		border-top: none
 	&__read
-		font-size: $fz
 		letter-spacing: .02em
 		color: #838383
 		+al
@@ -652,7 +816,14 @@
 		justify-content: space-between
 		background-color: $grayLight
 		min-height: 334px
+		// height: 334px
+
+
+
 		padding: 20px 40px
+		+r(650)
+			flex-direction: column-reverse
+			align-items: flex-start
 	&__pic,
 	&__text
 		display: flex
@@ -663,20 +834,30 @@
 		width: 260px
 		text-align: center
 		padding: 0 40px 0 0
+		+r(650)
+			width: auto
+			padding: 0
+			margin: auto 0
+			text-align: left
 	&__text
 		width: 400px
+
 		flex-direction: column
 		align-items: flex-start
+		+r(650)
+			width: 100%
 	&__title
 		font-size: 24px
 		letter-spacing: -.05em
 		color: $text
 		+ab
 	&__desc
-		font-size: $fz
 		line-height: 1.65
 		letter-spacing: -.05em
 		color: $text
+		flex: 0 1 auto
+		box-sizing: border-box
+		max-width: 100%
 		+al
 
 .profile
@@ -690,6 +871,8 @@
 		height: auto
 		margin-bottom: 24px
 		margin-right: 20px
+		+r(650)
+			max-width: 280px
 	&__wrap
 		text-align: right
 		padding: 30px
@@ -717,13 +900,11 @@
 		+al
 	&__position
 		text-transform: uppercase
-		font-size: $fz
 		color: $text
 		+al
 	&__text
 		text-align: left
 	&__desc
-		font-size: $fz
 		color: $text
 		line-height: 1.4
 		margin-bottom: 16px
@@ -745,12 +926,13 @@
 		vertical-align: top
 		&:hover
 			.fa
-				color: #fff
+
 .header__share
 	position: absolute
 	width: 30px
 	bottom: 40px
 	right: 0
+	height: 50%
 	z-index: 15
 	flex-direction: column
 	min-height: 40%

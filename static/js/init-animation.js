@@ -1,6 +1,6 @@
 $(function () {
 
-	$(window).on('load', function() {
+	// $(document).ready(function() {
 		/*--- global animations init ---*/
 		/*---------------------------------------------------------------------*/
 		Animation.initGlobalAnimations({
@@ -177,27 +177,9 @@ $(function () {
 				}
 			}
 		});
-		// /*--- num animations init ---*/
-		// /*---------------------------------------------------------------------*/
-		// Animation.initNumAnimations({
-		// 	container: '.article-section-table',
-		// 	label: '.article-section-table-num',
-		// 	num: '.article-section-table-num .item'
-		// });
-		/* --- scroll ---*/
-		/*--------------------------------------------------------------------*/
-
-		// Animation.initScroll({
-		// 	scrollBox: '.ui-dialog'
-		// });
 
 	});
 
-	/*--- parallax ---*/
-	/*---------------------------------------------------------------------*/
-	// Animation.initParallax();
 
-
-
-});
+// });
 

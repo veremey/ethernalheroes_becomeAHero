@@ -4,7 +4,7 @@
 		max-width: 100%
 	&__fieldset
 		position: relative
-		margin-bottom: 20px
+		margin-bottom: 24px
 		+clr
 		&.input--filled
 			.data
@@ -27,6 +27,9 @@
 		font-size: 24px
 		color: $text
 		+al
+		+r(650)
+			height: 50px
+			font-size: 18px
 		&.has-error
 			border-color: #EA227D
 	&__label
@@ -38,19 +41,28 @@
 		+al
 		pointer-events: none
 		+tr(.4s)
+		+r(650)
+			font-size: 18px
 	&__footer
 		display: flex
 		align-items: center
 		justify-content: space-between
 		margin-top: 40px
+		+r(650)
+			flex-wrap: wrap
 	&__desc
-		font-size: $fz
+		font-size: 16px
 		color: $text
 		+al
+		+r(650)
+			margin-top: 30px
+			font-size: 13px
 	&__link
-		font-size: $fz
+		font-size: 16px
 		color: $blue
 		+al
+		+r(650)
+			font-size: 13px
 		&:hover
 			opacity: .8
 
@@ -80,17 +92,21 @@
 #publickWallet-error
 	position: absolute
 	color: #ff4747
-	font-size: $fz
+	font-size: 16px
 	// padding-left: 40px
 	padding-top: 20px
 	top: 100%
+	+r(650)
+		font-size: 13px
 
 #wallet-error
 	position: absolute
 	color: #ff4747
-	font-size: $fz
+	font-size: 16px
 	padding-left: 40px
 	padding-top: 20px
+	+r(650)
+		font-size: 13px
 	&:before
 		content: '\26A0'
 		position: absolute
@@ -100,6 +116,8 @@
 		font-size: 18px
 		width: 20px
 		height: 20px
+		+r(650)
+			font-size: 14px
 
 #email-error,
 #password-error,

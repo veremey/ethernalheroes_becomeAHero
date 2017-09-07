@@ -93,7 +93,8 @@ function GlobalMainClass() {
 						{
 							breakpoint: 880,
 							settings: {
-								variableWidth: false
+								variableWidth: false,
+								arrows: false
 							}
 						}
 					]
@@ -172,31 +173,33 @@ function GlobalMainClass() {
 		/* --- parallax scrollMagic init ---*/
 	/*--------------------------------------------------------------------*/
 	this.initParallax = function(opt) {
-		var $window = $(window);
-		var controller = new ScrollMagic.Controller();
+		if(true && opt.parallax ){
+			var $window = $(window);
+			var controller = new ScrollMagic.Controller();
 
-		$(window).on("scroll", function() {
-		    controller.update(true);
-		});
-
-		if($(window).width() > 880){
-			$(".parallax").each(function(index, elem) {
-				var $this = $(this);
-				var $parent = $this.parent(); //must use as triggerElement
-				var tween = TweenMax.from(elem, 1, {
-					y: '-30%',
-					ease: Linear.easeNone
-				});
-
-				new ScrollMagic.Scene({
-						triggerElement: $parent.get(0),
-						triggerHook: .8,
-						duration: "150%"
-					})
-					.setTween(tween)
-					// .addIndicators()
-					.addTo(controller);
+			$(window).on("scroll", function() {
+			    controller.update(true);
 			});
+
+			if($(window).width() > 880){
+				$(".parallax").each(function(index, elem) {
+					var $this = $(this);
+					var $parent = $this.parent(); //must use as triggerElement
+					var tween = TweenMax.from(elem, 1, {
+						y: '-30%',
+						ease: Linear.easeNone
+					});
+
+					new ScrollMagic.Scene({
+							triggerElement: $parent.get(0),
+							triggerHook: .8,
+							duration: "150%"
+						})
+						.setTween(tween)
+						// .addIndicators()
+						.addTo(controller);
+				});
+			}
 		}
 	} //initParallax
 

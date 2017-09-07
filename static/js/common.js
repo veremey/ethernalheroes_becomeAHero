@@ -48,6 +48,9 @@ $(document).ready(function () {
 
 	/*-------- fix body ------*/
 	$('.menu .js-toggler').on('click', function(){
+		if($(this).parent().hasClass('no-transforms') == true ){
+			$('body').addClass('no-move');
+		}
 		$('body').toggleClass('no-move');
 		$('.header .menu').toggleClass('no-transforms');
 	});
@@ -110,13 +113,63 @@ $(document).ready(function () {
 			// }
 		})
 
-	if($(document).width() > 1060) {
-		Global_main.fourSlider({
-			slider: '.doc_correct',
-			item: '.read'
-		});
-	}
+	// if($(document).width() > 677) {
+	// 	Global_main.fourSlider({
+	// 		slider: '.doc_correct',
+	// 		item: '.read'
+	// 	});
+	// }
 
+
+
+	// $('.doc_correct').slick({
+	// 	infinite: false,
+	// 	variableWidth: true,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 651,
+	// 			settings: {
+	// 				infinite: false,
+	// 				variableWidth: true,
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 650,
+	// 			settings: "unslick"
+	// 		}
+	// 	]
+	// });
+
+	runSlick();
+
+});
+
+var runSlick = function () {
+	$('.doc_correct').slick({
+		infinite: false,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 651,
+				settings: {
+					infinite: false,
+					variableWidth: true,
+				}
+			},
+			{
+				breakpoint: 650,
+				settings: "unslick"
+			}
+		]
+	});
+}
+
+$(window).on('resize', function(){
+  var width = $(window).width();
+  if(width > 633) {
+    // reinit slick while window's width is less than maximum width (641px)
+    runSlick();
+  }
 });
 
 
