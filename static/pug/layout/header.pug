@@ -1,0 +1,33 @@
+
+header.header.is-animated
+	.layout.header_inner
+		a(href='index.html').logo
+			img(src='static/img/logo.png', alt='logo').logo__img
+		.half.half_flex
+			.menu
+				button.btn-toggler(data-toggle-text="Close menu", data-start-text="Menu", data-toggler="menu__box", data-trigger="navigator").js-toggle-text.js-toggler Menu
+					//- span
+				.menu__box
+					.layout
+						nav.nav
+							ul.menu__list
+								each liw in ['Introduction', 'Game description', 'Roadmap', 'Market & Industry', 'Token distribution', 'Benefits & bonuses', 'Tokenization', 'Documents', 'Team']
+									li.menu__item
+										a(href="#").menu__link #{liw}
+						.menu__footer
+							a(href="#", data-ppp="js-join").menu__link.is-colored.mobile-show.js-ppp Join ICO
+							a(href="#", data-ppp="js-login").menu__link.login.mobile-show.js-ppp Log in
+			.navigator
+				.user
+					a(href="#").user__link Whitepaper
+					a(href="#", data-ppp="js-login").user__link.js-ppp Log in
+					a(href="#", data-ppp="js-join").user__link.is-colored.js-ppp Join ICO
+				.select.js-select
+					span(data-strt="En").select__text.js-select-text En
+					input(type="hidden", value="0", name="lang").js-select-input
+					ul.select__list.sdw.js-select-list
+
+						li(data-id=index).is-active En
+						li(data-id=index) Ru
+						li(data-id=index) Cn
+

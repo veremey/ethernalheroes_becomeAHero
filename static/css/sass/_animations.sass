@@ -1,0 +1,72 @@
+@mixin fromTop
+	opacity: 0
+	transform: translateY(-50px)
+	transition: transform .5s .3s, opacity .5s .3s
+	&.is-animated
+		opacity: 1
+		transform: translateY(0)
+
+@mixin fromBottom
+	opacity: 0
+	transform: translateY(50px)
+	transition: transform .5s .3s, opacity .5s .3s
+	&.is-animated
+		opacity: 1
+		transform: translateY(0)
+
+@mixin fromRight
+	opacity: 0
+	transform: translateX(50px)
+	transition: transform .5s .3s, opacity .5s .3s
+	&.is-animated
+		opacity: 1
+		transform: translateY(0)
+
+@mixin fromLeft
+	opacity: 0
+	transform: translateX(-50px)
+	transition: transform .5s .3s, opacity .5s .3s
+	&.is-animated
+		opacity: 1
+		transform: translateY(0)
+
+@mixin scale
+	opacity: 0
+	transform: scale(0)
+	transition: transform .5s .3s, opacity .5s .3s
+	&.is-animated
+		opacity: 1
+		transform: scale(1)
+
+
+
+.header .logo,
+
+.header .menu,
+.navigator
+	@include fromTop
+
+.startscreen,
+.half,
+.slide,
+.details,
+.doc,
+.title-section,
+.public,
+.profile__item
+	@include fromBottom
+
+
+.half_l,
+.doc__title
+	@include fromLeft
+
+.pie
+	@include scale
+
+// $itm: road__item !default
+
+// @for $i from 1 through 9
+// 	.#{$itm}-#{$i}
+// 		transition: transform .5s + (1/1+$i) .5s+0.$i, opacity .5s + $i .5s+$i
+

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+  <head>
+    <meta charset="utf-8">
+    <title>ethernal heroes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="static/img/favicon.png">
+    <link rel="stylesheet" media="all" href="static/css/font-awesome.css">
+    <link rel="stylesheet" media="all" href="static/css/style.css">
+    <script src="static/js/lib/jquery.js"></script>
+    <script src="static/js/lib/slick.min.js"></script>
+    <script src="static/js/lib/slick.min.js"></script>
+    <script src="static/js/lib/jquery.countdown.min.js"></script>
+    <script src="static/js/lib/classie.js"></script>
+    <script src="static/js/lib/jquery.validate.min.js"></script>
+    <script src="static/js/lib/jquery.formatter.min.js"></script>
+    <script src="static/js/lib/TweenMax.min.js"></script>
+    <script src="static/js/lib/ScrollMagic.js"></script>
+    <script src="static/js/lib/animation.gsap.js"></script>
+    <script src="static/js/lib/debug.addIndicators.js"></script>
+    <script src="static/js/global.js"></script>
+    <script src="static/js/animation.js"></script>
+    <script src="static/js/init-global.js"></script>
+    <script src="static/js/init-validate.js"></script>
+    <script src="static/js/init-select.js"></script>
+    <script src="static/js/init-animation.js"></script>
+    <script src="static/js/common.js"></script>
+  </head>
+  <body class="is-animated">
+    <!--BEGIN out-->
+    <div class="out">
+      <header class="header">
+        <div class="layout header_inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="static/img/logo.png" alt="logo">
+          </a>
+          <div class="half half_end">
+            <div class="navigator">
+              <div class="user">
+                <a class="user__mail" href="#">ipad.surf@gmail.com</a>
+              </div>
+              <div class="select js-select">
+                <span class="select__text js-select-text" data-strt="En">En</span>
+                <input class="js-select-input" type="hidden" value="0" name="lang">
+                <ul class="select__list sdw js-select-list">
+                  <li class="is-active">En</li>
+                  <li>Ru</li>
+                  <li>Cn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="money is-animated">
+        <div class="layout section-inner border-bottom bottom-space">
+          <div class="half half_l">
+            <h6 class="title-small">Total tokens contributed</h6>
+            <p class="section__desc section__desc_upper">25&nbsp;921&nbsp;669</p>
+            <p class="section__desc section__desc_upper text-gray">$11&nbsp;970&nbsp;742</p>
+          </div>
+          <div class="half">
+            <h6 class="title-small">8 921 transactions</h6>
+            <div class="money-wrap">
+              <p class="section__desc section__desc_upper">
+                <span class="section__desc section__desc_upper text-fiolet">ETH</span>25&nbsp;921&nbsp;669</p>
+            </div>
+            <div class="money-wrap">
+              <p class="section__desc section__desc_upper">
+                <span class="section__desc section__desc_upper text-orange">ETH</span>$11&nbsp;970&nbsp;742</p>
+            </div>
+            <div class="money-wrap">
+              <p class="section__desc section__desc_upper">
+                <span class="section__desc section__desc_upper text-aqua">ETH</span>$11&nbsp;970&nbsp;742</p>
+            </div>
+          </div>
+        </div>
+        <section class="section-light is-animated pb-zero">
+          <div class="layout section-inner">
+            <div class="half half_l">
+              <p class="section__desc section__desc_small">Your token balance</p>
+              <h6 class="title-section title-section_light text-blue">
+                <i class="icon-coin"></i>32&nbsp;500</h6>
+              <div class="currency">
+                <p class="section__desc section__desc_small">Your contribution</p>
+                <div class="money-wrap">
+                  <p class="section__desc section__desc_upper">
+                    <span class="section__desc section__desc_upper text-fiolet">ETH</span>25&nbsp;921&nbsp;669</p>
+                </div>
+                <div class="money-wrap">
+                  <p class="section__desc section__desc_upper">
+                    <span class="section__desc section__desc_upper text-orange">ETH</span>11&nbsp;970&nbsp;742</p>
+                </div>
+                <div class="money-wrap">
+                  <p class="section__desc section__desc_upper">
+                    <span class="section__desc section__desc_upper text-aqua">ETH</span>11&nbsp;970&nbsp;742</p>
+                </div>
+              </div>
+            </div>
+            <div class="half">
+              <h6 class="title-section top-offset-40">Contributions</h6>
+              <div class="section-box">
+                <h6 class="title-small">Master Wallet</h6>
+                <p class="section__desc section__desc_small">Your ETH wallet number for buying DMarket tokens. The tokens will be sent to your wallet after the token sale phase #2.</p>
+              </div>
+              <form class="wallet__form js-validate top-offset-40" method="POST" action="/" autocomplete="on">
+                <fieldset class="wallet__fieldset">
+                  <input class="wallet__input js-wallet" type="tel" name="wallet" required>
+                  <label class="wallet__label" for="wallet">Wallet number</label>
+                  <i class="icon-bird-green"></i>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="section-light is-animated pb-zero">
+          <div class="layout tab">
+            <div class="tab__item is-active" data-tab="tab__conteiner-01">
+              <a class="tab__link" href="#">Contributions in ETH</a>
+            </div>
+            <div class="tab__item" data-tab="tab__conteiner-02">
+              <a class="tab__link" href="#">Contributions in BTC</a>
+            </div>
+            <div class="tab__item" data-tab="tab__conteiner-03">
+              <a class="tab__link" href="#">Contributions in Skins</a>
+            </div>
+          </div>
+          <section class="section-light is-animated pb-zero">
+            <div class="tab__conteiner tab__conteiner-01 is-open">
+              <div class="layout section-inner">
+                <div class="half half_l">
+                  <form class="wallet__form js-validate top-offset-40" method="POST" action="/" autocomplete="on">
+                    <fieldset class="wallet__fieldset">
+                      <input class="wallet__input js-wallet" type="tel" name="Eth" required>
+                      <label class="wallet__label" for="Eth">Your contributions in ETH</label>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="half">
+                  <form class="wallet__form js-validate top-offset-40" method="POST" action="/" autocomplete="on">
+                    <fieldset class="wallet__fieldset">
+                      <input class="wallet__input js-wallet" type="tel" name="publickWallet" required>
+                      <label class="wallet__label" for="publickWallet">Public wallet for contribution</label>
+                      <i class="icon-bird-green"></i>
+                    </fieldset>
+                    <div class="wallet__footer">
+                      <button class="btn-small" type="submit">Copy</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="tab__conteiner tab__conteiner-02">
+              <div class="layout section-inner">
+                <div class="half half_l">
+                  <p class="section__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, cupiditate architecto iure natus! Voluptates aperiam id perferendis vel iure nesciunt perspiciatis quaerat, reprehenderit earum, porro cupiditate tempora saepe. Quam,
+                    pariatur.</p>
+                </div>
+                <div class="half">
+                  <form class="wallet__form js-validate top-offset-40" method="POST" action="/" autocomplete="on">
+                    <fieldset class="wallet__fieldset">
+                      <input class="wallet__input js-wallet" type="tel" name="wallet" required>
+                      <label class="wallet__label" for="wallet">Public wallet for contribution</label>
+                      <i class="icon-bird-green"></i>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="tab__conteiner tab__conteiner-03">
+              <div class="layout section-inner">
+                <div class="half half_l">
+                  <p class="section__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, cupiditate architecto iure natus! Voluptates aperiam id perferendis vel iure nesciunt perspiciatis quaerat, reprehenderit earum, porro cupiditate tempora saepe. Quam,
+                    pariatur.</p>
+                </div>
+                <div class="half">
+                  <p class="section__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, cupiditate architecto iure natus! Voluptates aperiam id perferendis vel iure nesciunt perspiciatis quaerat, reprehenderit earum, porro cupiditate tempora saepe. Quam,
+                    pariatur.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+      <footer class="footer layout">
+        <div class="footer__box footer__box_top">
+          <a class="footer__logo" href="index.html">
+            <img class="footer__logo_img" src="static/img/logo-footer.png" alt="logo">
+          </a>
+          <div class="half">
+            <nav class="footer__nav">
+              <div class="footer__list">
+                <h6 class="footer__title">Foundation</h6>
+                <a class="footer__link" href="#">Roadmap</a>
+                <a class="footer__link" href="#">Team</a>
+                <a class="footer__link" href="#">Advisors</a>
+                <a class="footer__link" href="#">ICO structure</a>
+              </div>
+              <div class="footer__list">
+                <h6 class="footer__title">Documentation</h6>
+                <a class="footer__link" href="#">One Pager</a>
+                <a class="footer__link" href="#">White Paper</a>
+                <a class="footer__link" href="#">Privacy Policy</a>
+                <a class="footer__link" href="#">Tokens Sale Policy</a>
+              </div>
+              <div class="footer__list">
+                <h6 class="footer__title">Developers</h6>
+                <a class="footer__link" href="#">GitHub</a>
+              </div>
+            </nav>
+            <a class="get-top" href="#">
+              <img src="static/img/top.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer__box footer__box_bottom">
+          <div class="share footer__share">
+            <a class="share__link" href="#">
+              <i class="fa fa-paper-plane-o"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-github"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-slack"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-reddit-alien"></i>
+            </a>
+          </div>
+          <p class="copy">Copyright © 2017 Game gaden. All rights reserved</p>
+        </div>
+      </footer>
+      <div class="popup">
+        <div class="popup__overlay"></div>
+        <div class="popup__window js-join">
+          <button class="btn-toggler js-close is-active" data-close="popup">Close</button>
+          <div class="layout popup__center">
+            <div class="section-inner">
+              <div class="half half_l">
+                <h5 class="title-section">Join ICO</h5>
+              </div>
+              <div class="half">
+                <form class="data__form js-validate" method="POST" action="/" autocomplete="on">
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="email" name="email" required>
+                    <label class="data__label" for="email">Email</label>
+                  </fieldset>
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="password" name="password" required id="password">
+                    <label class="data__label" for="password">Password</label>
+                  </fieldset>
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="password" name="confirm_password" required>
+                    <label class="data__label" for="confirm_password">Repeat password</label>
+                  </fieldset>
+                  <div class="data__footer">
+                    <button class="btn-small" type="submit">Sign Up</button>
+                    <p class="data__desc">Already have an account?
+                      <a class="data__link js-ppp" href="#" data-ppp="js-login">Login</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__window js-login">
+          <button class="btn-toggler js-close is-active" data-close="popup">Close</button>
+          <div class="layout popup__center">
+            <div class="section-inner">
+              <div class="half half_l">
+                <h5 class="title-section">Log in</h5>
+              </div>
+              <div class="half">
+                <form class="data__form js-validate" method="POST" action="/" autocomplete="on">
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="email" name="email" required>
+                    <label class="data__label" for="email">Email</label>
+                  </fieldset>
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="password" name="password" required id="password">
+                    <label class="data__label" for="password">Password</label>
+                    <a class="data__link js-ppp" href="#" data-ppp="js-subcribtion">Forgot password?</a>
+                  </fieldset>
+                  <div class="data__footer">
+                    <button class="btn-small" type="submit">Sign Up</button>
+                    <p class="data__desc">Already have an account?
+                      <a class="data__link js-ppp" href="#" data-popup="js-login">Login</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__window js-subcribtion">
+          <button class="btn-toggler js-close is-active" data-close="popup">Close</button>
+          <div class="layout popup__center">
+            <div class="section-inner">
+              <div class="half half_l"></div>
+              <div class="half">
+                <h5 class="title-section">Subcribtion</h5>
+                <form class="data__form js-validate" method="POST" action="/" autocomplete="on">
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="email" name="email" required>
+                    <label class="data__label" for="email">Email</label>
+                  </fieldset>
+                  <div class="data__footer">
+                    <button class="btn-small" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+  </body>
+</html>

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+  <head>
+    <meta charset="utf-8">
+    <title>ethernal heroes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="static/img/favicon.png">
+    <link rel="stylesheet" media="all" href="static/css/font-awesome.css">
+    <link rel="stylesheet" media="all" href="static/css/style.css">
+    <script src="static/js/lib/jquery.js"></script>
+    <script src="static/js/lib/slick.min.js"></script>
+    <script src="static/js/lib/slick.min.js"></script>
+    <script src="static/js/lib/jquery.countdown.min.js"></script>
+    <script src="static/js/lib/classie.js"></script>
+    <script src="static/js/lib/jquery.validate.min.js"></script>
+    <script src="static/js/lib/jquery.formatter.min.js"></script>
+    <script src="static/js/lib/TweenMax.min.js"></script>
+    <script src="static/js/lib/ScrollMagic.js"></script>
+    <script src="static/js/lib/animation.gsap.js"></script>
+    <script src="static/js/lib/debug.addIndicators.js"></script>
+    <script src="static/js/global.js"></script>
+    <script src="static/js/animation.js"></script>
+    <script src="static/js/init-global.js"></script>
+    <script src="static/js/init-validate.js"></script>
+    <script src="static/js/init-select.js"></script>
+    <script src="static/js/init-animation.js"></script>
+    <script src="static/js/common.js"></script>
+  </head>
+  <body class="is-animated">
+    <!--BEGIN out-->
+    <div class="out">
+      <header class="header is-animated">
+        <div class="layout header_inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="static/img/logo.png" alt="logo">
+          </a>
+          <div class="half half_flex">
+            <div class="menu">
+              <button class="btn-toggler js-toggle-text js-toggler" data-toggle-text="Close menu" data-start-text="Menu" data-toggler="menu__box" data-trigger="navigator">Menu</button>
+              <div class="menu__box">
+                <div class="layout">
+                  <nav class="nav">
+                    <ul class="menu__list">
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Introduction</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Game description</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Roadmap</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Market &amp; Industry</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Token distribution</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Benefits &amp; bonuses</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Tokenization</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Documents</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Team</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="menu__footer">
+                    <a class="menu__link is-colored mobile-show js-ppp" href="#" data-ppp="js-join">Join ICO</a>
+                    <a class="menu__link login mobile-show js-ppp" href="#" data-ppp="js-login">Log in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navigator">
+              <div class="user">
+                <a class="user__link" href="#">Whitepaper</a>
+                <a class="user__link js-ppp" href="#" data-ppp="js-login">Log in</a>
+                <a class="user__link is-colored js-ppp" href="#" data-ppp="js-join">Join ICO</a>
+              </div>
+              <div class="select js-select">
+                <span class="select__text js-select-text" data-strt="En">En</span>
+                <input class="js-select-input" type="hidden" value="0" name="lang">
+                <ul class="select__list sdw js-select-list">
+                  <li class="is-active">En</li>
+                  <li>Ru</li>
+                  <li>Cn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="startscreen">
+        <div class="startscreen__conteiner layout">
+          <div class="startscreen__box">
+            <h1 class="title-biggest">Become
+              <br> a Hero!</h1>
+            <div class="timer">
+              <p class="timer__desc">Presale stars in:</p>
+              <div class="timer__box" data-finaldate-year="2017" data-finaldate-month="10" data-finaldate-day="10"></div>
+            </div>
+            <div class="startscreen__footer">
+              <a class="startscreen__link" href="#">Apply for presale
+                <i class="icon-next-blue"></i>
+              </a>
+              <a class="startscreen__link" href="#">Subscribe me for updates
+                <i class="icon-next-blue"></i>
+              </a>
+            </div>
+          </div>
+          <a class="scroll-next" href="#">
+            <i class="icon-mouse"></i>
+            <span class="section__desc_small">Scroll</span>
+          </a>
+          <img class="parallax" src="static/img/hero.png" alt="hero">
+          <div class="share header__share">
+            <a class="share__link" href="#">
+              <i class="fa fa-paper-plane-o"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-github"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-slack"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-reddit-alien"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-dark is-animated">
+        <div class="layout section-inner">
+          <div class="half half_l">
+            <h3 class="title-section">Introdaction</h3>
+            <div class="tag">
+              <p class="tag__desc">Avalible on:
+                <span class="tag__span">iOS
+                  <span class="tag__span">Android</span>
+                  <span class="tag__span">PC</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="half">
+            <p class="section__desc">Ethernal Heroes - multiplatform game in the genre of the collector's card button in the fantasy setting. The player will have to assemble a team of legendary heroes and compete with the strength of his squad and strategic talent with other
+              players in endless fights and tournaments, collecting, collecting and strengthening new unique heroes cards.</p>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="slide">
+            <div class="slide__item">
+              <div class="slide__pic">
+                <img class="slide__img" src="static/img/intro.jpg" alt="">
+              </div>
+              <div class="slide__info">
+                <p class="slide__num">1</p>
+                <p class="slide__desc">Each card of the hero is represented in a limited edition and can be obtained by playing a game or bought at a free card auction from other players.</p>
+              </div>
+            </div>
+            <div class="slide__item">
+              <div class="slide__pic">
+                <img class="slide__img" src="static/img/intro.jpg" alt="">
+              </div>
+              <div class="slide__info">
+                <s class="slide__num">2</s>
+                <p class="slide__desc">Each card of the hero is represented in a limited edition and can be obtained by playing a game or bought at a free card auction from other players.</p>
+              </div>
+            </div>
+            <div class="slide__item">
+              <div class="slide__pic">
+                <img class="slide__img" src="static/img/intro.jpg" alt="">
+              </div>
+              <div class="slide__info">
+                <p class="slide__num">3</p>
+                <p class="slide__desc">Each card of the hero is represented in a limited edition and can be obtained by playing a game or bought at a free card auction from other players.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-light pb-zero is-animated">
+        <div class="layout section-inner">
+          <div class="half half_l">
+            <h3 class="title-section">Game
+              <br> description</h3>
+          </div>
+          <div class="half">
+            <p class="section__desc">The world of Ethernium is torn apart by an endless war that is destroying everything in its path. The insidious, merciless, legions of invincible demons are preparing to wipe out all life from the face of the earth. In an era of endless war,
+              survival depends only on your courage and winning strategy</p>
+          </div>
+        </div>
+        <div class="layout section-inner">
+          <div class="half" style="position: relative;">
+            <img class="ipad parallax" src="static/img/ipad.png" alt="">
+          </div>
+          <div class="half half_end">
+            <div class="column">
+              <div class="column__item">
+                <h6 class="title-small">Choose one of the four factions!</h6>
+                <p class="column__desc">Become the leader of the mysterious night elves, the elder of the crafty magicians, the ruler of the ruthless demons, or head the Order of the Right Inquisitors, watching the bloody battles collapse alliances and kill entire nations.</p>
+              </div>
+              <div class="column__item">
+                <h6 class="title-small">Call the hero to lead your army!</h6>
+                <p class="column__desc">Let your troops fight side by side with the strongest heroes. Hardened in battle brave, whose level grows with each battle, can use spells, strengthen troops and inflict horror on your enemies.</p>
+              </div>
+              <div class="column__item">
+                <h6 class="title-small">Take part in the epic events!</h6>
+                <p class="column__desc">Before your eyes will pass the events of the whole historical era of Ethernium.</p>
+                <p class="column__desc">During the passage of the story you will learn about the mystery of the opening of the gates between the worlds, the tragic destruction of the kingdom of elves, the treachery of the inquisitor Erinyes and the battle of all the kingdoms
+                  at the gates of anger.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-light is-animated">
+        <div class="layout">
+          <h5 class="doc__title">Cards</h5>
+          <div class="details">
+            <div class="details__item">
+              <div class="details__item_wrap">
+                <div class="details__box">
+                  <div class="details__text">
+                    <h4 class="title-section">Warrior</h4>
+                    <p class="details__desc">Infinite fighters who obey only the church. Their faith is unshakable, as is the desire to cleanse the world of the products of filth.</p>
+                    <p class="details__desc">The warrior has immunity to any curses, at the moment of entering the battlefield it deals damage to all demon creatures.</p>
+                  </div>
+                </div>
+                <div class="details__pic">
+                  <img src="static/img/warior.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="details__item">
+              <div class="details__item_wrap">
+                <div class="details__box">
+                  <div class="details__text">
+                    <h4 class="title-section">digital
+                      <br> reality</h4>
+                    <p class="details__desc">Infinite fighters who obey only the church. Their faith is unshakable, as is the desire to cleanse the world of the products of filth.</p>
+                    <p class="details__desc">The warrior has immunity to any curses, at the moment of entering the battlefield it deals damage to all demon creatures.</p>
+                  </div>
+                </div>
+                <div class="details__pic">
+                  <img src="static/img/warior-01.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-dark is-animated">
+        <div class="layout section-inner">
+          <div class="half half_l">
+            <h3 class="title-section">Roadmap</h3>
+          </div>
+          <div class="half">
+            <div class="road">
+              <div class="road__item road__item-1 road__item_check">
+                <p class="road__desc">Idea of the project, concept development
+                  <br>
+                  <time class="road__date" datetime="2017-06">June 2017</time>
+                </p>
+              </div>
+              <div class="road__item road__item-2 road__item_check">
+                <p class="road__desc">The project team was formed
+                  <br>
+                  <time class="road__date" datetime="2017-06">July 2017</time>
+                </p>
+              </div>
+              <div class="road__item road__item-3 road__item_check">
+                <p class="road__desc">The beginning of game development, pre-sale
+                  <br>
+                  <time class="road__date" datetime="2017-06">August 2017</time>
+                </p>
+              </div>
+              <div class="road__item road__item-4 road__item_check">
+                <p class="road__desc">Crowdsale
+                  <br>
+                  <time class="road__date" datetime="2017-06">Oktober 2017</time>
+                </p>
+              </div>
+              <div class="road__item road__item-5 road__item_now">
+                <p class="road__desc">Demo build
+                  <br>
+                  <time class="road__date" datetime="2017-06">January 2018</time>
+                </p>
+              </div>
+              <div class="road__item road__item-6">
+                <p class="road__desc">Alpha version
+                  <br>
+                  <time class="road__date" datetime="2017-06">April 2018</time>
+                </p>
+              </div>
+              <div class="road__item road__item-7">
+                <p class="road__desc">Soft launch
+                  <br>
+                  <time class="road__date" datetime="2017-06">July 2018</time>
+                </p>
+              </div>
+              <div class="road__item road__item-8">
+                <p class="road__desc">Global launch
+                  <br>
+                  <time class="road__date" datetime="2017-06">Oktober 2018</time>
+                </p>
+              </div>
+              <div class="road__item road__item-9">
+                <p class="road__desc">Launch of the auction of tokens
+                  <br>
+                  <time class="road__date" datetime="2017-06">December 2018</time>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-light is-animated">
+        <div class="layout section-inner">
+          <div class="half half_s">
+            <h3 class="title-section">Market &#38;
+              <br> industry</h3>
+            <b class="section__desc section__desc_blue">How will the genre and its revenues change, when will the opportunity to win real money be added?</b>
+            <img class="map-img" src="static/img/map.png" alt="">
+          </div>
+          <div class="half">
+            <div class="population">
+              <h4 class="population__title">40&nbsp;000&nbsp;000</h4>
+              <p class="population__small">active players on CCDG market</p>
+            </div>
+            <div class="population">
+              <h4 class="population__title">$ 1.4 BILLION</h4>
+              <p class="population__small">The total volume of the CCDG market</p>
+            </div>
+            <p class="section__desc">The CCDG market has more than 40 million active players worldwide, most of which live in the US and Asia, where the genre is traditionally popular. The genre is characterized by a high average check per player and a stable loyal audience.</p>
+            <p
+              class="section__desc">The total volume of the CCDG market is 1.4 billion USD. And all this amount of money is spent on buying boosters and pumping cards. At the same time, according to statistics, only 4000 pro-players all over the world earn money due to their
+              skills in games.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-dark is-animated">
+        <div class="layout section-inner">
+          <div class="half half_l">
+            <h3 class="title-section">Token
+              <br> functions</h3>
+            <div class="token">
+              <svg class="icon-lamp" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 83.5 82.167" style="enable-background:new 0 0 83.5 82.167;" xml:space="preserve">
+                <g>
+                  <path class="st0" d="M34.589,68.166c-0.002-6.46-2.465-12.924-7.396-17.857c-3.623-3.617-5.858-8.616-5.858-14.142								c0-11.045,8.953-20,19.998-20s19.999,8.954,19.999,20c0,5.525-2.236,10.524-5.856,14.142c-4.934,4.934-7.396,11.397-7.4,17.857								H34.589z"></path>
+                  <path class="st0" d="M48.074,68.166H34.587v10.5c0,1.375,1.127,2.501,2.501,2.501h8.485c1.375,0,2.501-1.126,2.501-2.501V68.166z"></path>
+                  <path class="st0" d="M32.492,27.327c-4.882,4.881-4.882,12.795,0.002,17.68C27.61,40.122,27.61,32.208,32.492,27.327z"></path>
+                  <path class="st0" d="M41.332,1.167v7.5V1.167z"></path>
+                  <path class="st0" d="M27.939,3.83l2.872,6.932L27.939,3.83z"></path>
+                  <path class="st0" d="M15.929,25.645l-6.932-2.873L15.929,25.645z"></path>
+                  <path class="st0" d="M66.736,46.688l6.932,2.873L66.736,46.688z"></path>
+                  <path class="st0" d="M54.727,3.83l-2.869,6.932L54.727,3.83z"></path>
+                  <path class="st0" d="M15.929,46.688l-6.932,2.873L15.929,46.688z"></path>
+                  <path class="st0" d="M73.671,22.772l-6.932,2.873L73.671,22.772z"></path>
+                  <path class="st0" d="M13.834,36.167H1.333H13.834z"></path>
+                  <path class="st0" d="M81.333,36.167H68.831H81.333z"></path>
+                  <path class="st0" d="M21.889,55.61l-8.841,8.842L21.889,55.61z"></path>
+                  <path class="st0" d="M69.616,7.882l-8.837,8.837L69.616,7.882z"></path>
+                  <path class="st0" d="M69.616,64.448l-8.837-8.841L69.616,64.448z"></path>
+                  <path class="st0" d="M13.05,7.878l8.839,8.841L13.05,7.878z"></path>
+                </g>
+              </svg>
+              <p class="token__desc">By analogy with poker rooms, part of each player's bet of 2% will be held in the form of a platform commission.</p>
+              <p class="token__desc">From these commissions will be formed a bonus pool, which will be played monthly in paid and free tournaments.</p>
+            </div>
+          </div>
+          <div class="half">
+            <p class="section__desc">The main feature of Ethernal Heroes is the ability to implement all types of in-game transactions in HERO tokens that comply with the ERC-20 standard. What are the HERO tokens for:</p>
+            <ul class="token__list">
+              <li class="token__item">
+                <p class="section__desc">Bets between players in games 1-on-1</p>
+              </li>
+              <li class="token__item">
+                <p class="section__desc">Payment for participation in tournaments held on the platform</p>
+              </li>
+              <li class="token__item">
+                <p class="section__desc">Possibility of input / output of HERO tokens to exchanges</p>
+              </li>
+              <li class="token__item">
+                <p class="section__desc">Buying boosters and game content</p>
+              </li>
+              <li class="token__item">
+                <p class="section__desc">Using in-game in-game items for transactions between players</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layout">
+          <img class="img-center" src="static/img/tel.png" alt="">
+        </div>
+        <div class="layout section-inner">
+          <div class="half half_l">
+            <h3 class="title-section">Benefits
+              <br> & bonuses</h3>
+          </div>
+          <div class="half">
+            <p class="section__desc">We want to please your investors and players, therefore we provide the following bonuses:</p>
+            <ul class="token__list">
+              <li class="token__item">
+                <p class="section__desc">We give a limited set of legendary cards that ordinary players will not have</p>
+              </li>
+              <li class="token__item">
+                <p class="section__desc">Possibility of closed testing of the alpha version of the game</p>
+              </li>
+              <li class="token__item">
+                <p class="section__desc">Possibility of input / output of HERO tokens to exchanges</p>
+              </li>
+              <li class="token__item">
+                <p class="section__desc">The absence of a system commission for the 1st year of work after the launch of the game</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-light pb-zero is-animated">
+        <div class="layout">
+          <div class="section-inner">
+            <div class="half half_l">
+              <h3 class="title-section">Tokenization
+                <br> structure</h3>
+            </div>
+            <div class="half">
+              <p class="section__desc">ICO launch
+                <br>
+                <time class="section__date">
+                  <i class="icon-calendar"></i>9 oct 2017</time>
+                <time class="section__date">
+                  <i class="icon-clock"></i>12:00 CET</time>
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </section>
+      <section class="section-light pb-zero is-animated">
+        <div class="layout">
+          <div class="section-inner bottom-offset-100">
+            <div class="half half_l">
+              <h6 class="doc__title">Token distribution</h6>
+              <div class="pie">
+                <div class="pie__pic">
+                  <img src="static/img/pie.png" alt="">
+                </div>
+                <div class="pie__labels">
+                  <p class="pie__tip pie__tip_01">0.8%</p>
+                  <p class="pie__tip pie__tip_02">1.2%</p>
+                  <p class="pie__tip pie__tip_03">6%</p>
+                  <p class="pie__tip pie__tip_04">40%</p>
+                  <p class="pie__tip pie__tip_05">48%</p>
+                </div>
+              </div>
+            </div>
+            <div class="half half_s">
+              <h6 class="doc__title"> Total amount of tokens — 250 000 000</h6>
+              <ul class="pie__list">
+                <li class="pie__item">
+                  <i class="pie__color color_lightgrean"></i>
+                  <p class="pie__desc">120 000 000 — Reserve of tokens</p>
+                </li>
+                <li class="pie__item">
+                  <i class="pie__color color_blue"></i>
+                  <p class="pie__desc">100 000 000 — Maximum amount for crowdsale</p>
+                </li>
+                <li class="pie__item">
+                  <i class="pie__color color_rose"></i>
+                  <p class="pie__desc">15 000 000 — Team</p>
+                </li>
+                <li class="pie__item">
+                  <i class="pie__color color_orange"></i>
+                  <p class="pie__desc">3 000 000 — Advisors</p>
+                </li>
+                <li class="pie__item">
+                  <i class="pie__color color_yellow"></i>
+                  <p class="pie__desc">2 000 000 — Bounty</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </section>
+      <section class="section-light is-animated">
+        <div class="layout">
+          <div class="section-inner">
+            <div class="half half_l">
+              <h6 class="doc__title">Distribution of bonuses for early ICO members</h6>
+            </div>
+          </div>
+          <div class="horizontal is-animated">
+            <ul class="horizontal__list">
+              <li class="horizontal__item">
+                <div class="horizontal__num">0-10000</div>
+                <div class="horizontal__line color_blue"></div>
+                <div class="horizontal__pers">30%</div>
+              </li>
+              <li class="horizontal__item">
+                <div class="horizontal__num">10000-20000</div>
+                <div class="horizontal__line color_rose w-xl"></div>
+                <div class="horizontal__pers">20%</div>
+              </li>
+              <li class="horizontal__item">
+                <div class="horizontal__num">20000-45000</div>
+                <div class="horizontal__line color_orange w-l"></div>
+                <div class="horizontal__pers">15%</div>
+              </li>
+              <li class="horizontal__item">
+                <div class="horizontal__num">45000-70000</div>
+                <div class="horizontal__line color_lightgrean w-m"></div>
+                <div class="horizontal__pers">5%</div>
+              </li>
+              <li class="horizontal__item">
+                <div class="horizontal__num">70000-90000</div>
+                <div class="horizontal__line color-blue w-z"></div>
+                <div class="horizontal__pers">0%</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-dark is-animated">
+        <div class="layout header-inner">
+          <h3 class="title-section">Documents</h3>
+          <div class="doc doc_correct">
+            <div class="read">
+              <div class="read__wrap">
+                <div class="read__pic">
+                  <img class="read__img" src="static/img/doc/doc-01.jpg" alt="">
+                </div>
+                <div class="read__text">
+                  <h6 class="read__title">White Paper</h6>
+                  <div class="read__lang">
+                    <a class="read__link" href="#" download>en</a>
+                    <a class="read__link" href="#" download>ru</a>
+                    <a class="read__link" href="#" download>ch</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="read">
+              <div class="read__wrap">
+                <div class="read__pic">
+                  <img class="read__img" src="static/img/doc/doc-02.jpg" alt="">
+                </div>
+                <div class="read__text">
+                  <h6 class="read__title">Tokens Sale Policy</h6>
+                  <div class="read__lang">
+                    <a class="read__link" href="#" download>en</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="read">
+              <div class="read__wrap">
+                <div class="read__pic">
+                  <img class="read__img" src="static/img/doc/doc-03.jpg" alt="">
+                </div>
+                <div class="read__text">
+                  <h6 class="read__title">White Paper</h6>
+                  <div class="read__lang">
+                    <a class="read__link" href="#" download>en</a>
+                    <a class="read__link" href="#" download>ru</a>
+                    <a class="read__link" href="#" download>ch</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="read">
+              <div class="read__wrap">
+                <div class="read__pic">
+                  <img class="read__img" src="static/img/doc/doc-04.jpg" alt="">
+                </div>
+                <div class="read__text">
+                  <h6 class="read__title">Tokens Sale Policy</h6>
+                  <div class="read__lang">
+                    <a class="read__link" href="#" download>en</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="read">
+              <div class="read__wrap">
+                <div class="read__pic">
+                  <img class="read__img" src="static/img/doc/doc-04.jpg" alt="">
+                </div>
+                <div class="read__text">
+                  <h6 class="read__title">Tokens Sale Policy</h6>
+                  <div class="read__lang">
+                    <a class="read__link" href="#" download>en</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc">
+            <h6 class="doc__title">Publications</h6>
+            <div class="public">
+              <div class="public__item">
+                <div class="public__top">
+                  <p class="public__big">Interview with Ethernal Heroes: the first card game with ingame crypto purchase</p>
+                </div>
+                <div class="public__footer">
+                  <img class="public__img" src="static/img/nyt.png" alt="">
+                  <p class="public__read">Read more</p>
+                </div>
+              </div>
+              <div class="public__item">
+                <div class="public__top">
+                  <p class="public__big">Wall Street Journal Editor Admonishes Reporters Over Trump Coverage</p>
+                </div>
+                <div class="public__footer">
+                  <img class="public__img" src="static/img/nyt.png" alt="">
+                  <p class="public__read">Read more</p>
+                </div>
+              </div>
+              <div class="public__item">
+                <div class="public__top">
+                  <p class="public__big">Interview with Ethernal Heroes: the first card game with ingame crypto purchase</p>
+                </div>
+                <div class="public__footer">
+                  <img class="public__img" src="static/img/nyt.png" alt="">
+                  <p class="public__read">Read more</p>
+                </div>
+              </div>
+              <div class="public__item">
+                <div class="public__top">
+                  <p class="public__big">Wall Street Journal Editor Admonishes Reporters Over Trump Coverage</p>
+                </div>
+                <div class="public__footer">
+                  <img class="public__img" src="static/img/nyt.png" alt="">
+                  <p class="public__read">Read more</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc">
+            <h6 class="doc__title">Partners</h6>
+            <div class="public">
+              <div class="public__item">
+                <div class="public__box">
+                  <a class="public__pic" href="#">
+                    <img class="public__logo" src="static/img/partners/01.png" alt="">
+                  </a>
+                  <div class="public__text">
+                    <h5 class="public__title">Acquired.io</h5>
+                    <p class="public__desc">Operational activities and key strategic decisions in the company. Co-owner of the company Game Garden, an expert in the field of desktop monetization and mobile solutions, user acquisition for mobile games. Experience of arbitrage
+                      of traffic since 2009. He was engaged in promotion of products: Farmdale, Fairy Kingdom, Fairy Farm.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="public__item">
+                <div class="public__box">
+                  <a class="public__pic" href="#">
+                    <img class="public__logo" src="static/img/partners/02.png" alt="">
+                  </a>
+                  <div class="public__text">
+                    <h5 class="public__title">Game-Garden.com</h5>
+                    <p class="public__desc">Operational activities and key strategic decisions in the company. Co-owner of the company Game Garden, an expert in the field of desktop monetization and mobile solutions, user acquisition for mobile games. Experience of arbitrage
+                      of traffic since 2009. He was engaged in promotion of products: Farmdale, Fairy Kingdom, Fairy Farm.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc">
+            <h6 class="doc__title">Team</h6>
+            <div class="profile">
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="static/img/team/01.jpg" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="static/img/team/01.jpg" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="static/img/team/01.jpg" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="static/img/team/01.jpg" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc">
+            <h6 class="doc__title">Advisors</h6>
+            <div class="profile">
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="static/img/team/01.jpg" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__item">
+                <div class="profile__wrap">
+                  <div class="profile__pic">
+                    <img class="profile__img" src="" alt="">
+                  </div>
+                  <div class="profile__header">
+                    <h5 class="profile__title">Sergey Dzhilnikov</h5>
+                    <p class="profile__position">CHIEF TECHNOLOGY OFFICER</p>
+                  </div>
+                  <div class="profile__text">
+                    <p class="profile__desc">Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company
+                      Game Garden has built a highly loaded analytical mechanism GENIE.</p>
+                    <p class="profile__desc">For him, nothing is impossible.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer layout">
+        <div class="footer__box footer__box_top">
+          <a class="footer__logo" href="index.html">
+            <img class="footer__logo_img" src="static/img/logo-footer.png" alt="logo">
+          </a>
+          <div class="half">
+            <nav class="footer__nav">
+              <div class="footer__list">
+                <h6 class="footer__title">Foundation</h6>
+                <a class="footer__link" href="#">Roadmap</a>
+                <a class="footer__link" href="#">Team</a>
+                <a class="footer__link" href="#">Advisors</a>
+                <a class="footer__link" href="#">ICO structure</a>
+              </div>
+              <div class="footer__list">
+                <h6 class="footer__title">Documentation</h6>
+                <a class="footer__link" href="#">One Pager</a>
+                <a class="footer__link" href="#">White Paper</a>
+                <a class="footer__link" href="#">Privacy Policy</a>
+                <a class="footer__link" href="#">Tokens Sale Policy</a>
+              </div>
+              <div class="footer__list">
+                <h6 class="footer__title">Developers</h6>
+                <a class="footer__link" href="#">GitHub</a>
+              </div>
+            </nav>
+            <a class="get-top" href="#">
+              <img src="static/img/top.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer__box footer__box_bottom">
+          <div class="share footer__share">
+            <a class="share__link" href="#">
+              <i class="fa fa-paper-plane-o"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-github"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-slack"></i>
+            </a>
+            <a class="share__link" href="#">
+              <i class="fa fa-reddit-alien"></i>
+            </a>
+          </div>
+          <p class="copy">Copyright © 2017 Game gaden. All rights reserved</p>
+        </div>
+      </footer>
+      <div class="popup">
+        <div class="popup__overlay"></div>
+        <div class="popup__window js-join">
+          <button class="btn-toggler js-close is-active" data-close="popup">Close</button>
+          <div class="layout popup__center">
+            <div class="section-inner">
+              <div class="half half_l">
+                <h5 class="title-section">Join ICO</h5>
+              </div>
+              <div class="half">
+                <form class="data__form js-validate" method="POST" action="/" autocomplete="on">
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="email" name="email" required>
+                    <label class="data__label" for="email">Email</label>
+                  </fieldset>
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="password" name="password" required id="password">
+                    <label class="data__label" for="password">Password</label>
+                  </fieldset>
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="password" name="confirm_password" required>
+                    <label class="data__label" for="confirm_password">Repeat password</label>
+                  </fieldset>
+                  <div class="data__footer">
+                    <button class="btn-small" type="submit">Sign Up</button>
+                    <p class="data__desc">Already have an account?
+                      <a class="data__link js-ppp" href="#" data-ppp="js-login">Log in</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__window js-login">
+          <button class="btn-toggler js-close is-active" data-close="popup">Close</button>
+          <div class="layout popup__center">
+            <div class="section-inner">
+              <div class="half half_l">
+                <h5 class="title-section">Log in</h5>
+              </div>
+              <div class="half">
+                <form class="data__form js-validate" method="POST" action="/" autocomplete="on">
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="email" name="email" required>
+                    <label class="data__label" for="email">Email</label>
+                  </fieldset>
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="password" name="password" required id="password">
+                    <label class="data__label" for="password">Password</label>
+                  </fieldset>
+                  <a class="data__link js-ppp" href="#" data-ppp="js-subcribtion">Forgot password?</a>
+                  <div class="data__footer">
+                    <button class="btn-small" type="submit">Log in</button>
+                    <p class="data__desc">Already have an account?
+                      <a class="data__link js-ppp" href="#" data-popup="js-join">Sign Up</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__window js-subcribtion">
+          <button class="btn-toggler js-close is-active" data-close="popup">Close</button>
+          <div class="layout popup__center">
+            <div class="section-inner">
+              <div class="half half_l"></div>
+              <div class="half">
+                <h5 class="title-section">Subcribtion</h5>
+                <form class="data__form js-validate" method="POST" action="/" autocomplete="on">
+                  <fieldset class="data__fieldset">
+                    <input class="data__input" type="email" name="email" required>
+                    <label class="data__label" for="email">Email</label>
+                  </fieldset>
+                  <div class="data__footer">
+                    <button class="btn-small" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+  </body>
+</html>

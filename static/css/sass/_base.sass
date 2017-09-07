@@ -1,0 +1,153 @@
++font('apercu_bold_pro', 'apercu_bold_pro')
++font('apercu_mono_pro', 'apercu_mono_pro')
++font('apercuProLight', 'apercuProLight')
++font('apercuproregular', 'apercuproregular')
+
+=ar
+	font-family: 'apercuproregular', Arial, sans-serif
+=al
+	font-family: 'apercuProLight', Arial, sans-serif
+=am
+	font-family: 'apercu_mono_pro', Arial, sans-serif
+=ab
+	font-family: 'apercu_bold_pro', Arial, sans-serif
+
+
+// colors
+$n: transparent
+$body: #1e1e1e
+$grayLight: #2b2b2b
+$grayDark: #252525
+$text: #C0C0C0
+$blue: #00A5F7
+$border: #626262
+
+$fz: 16px
+$m: 40px
+$headerHeight: 128px
+
+
+@function get-vh($target)
+	$vh-context: (1000*.0086) * 1px
+	@return ($target/$vh-context) * 1vh
+
+
+// size
+// $max-width: 320px
+
+html
+	+selection
+		background: rgba(255, 255, 255, .2)
+		color: #f00
+html,
+body
+	width: 100%
+	height: 100%
+	font-size: $fz
+	line-height: 1.3
+	color: $text
+	background-color: $body
+	// color: $light-gray
+	-webkit-font-smoothing: antialiased
+	&.no-move
+		overflow: hidden
+		padding-right: 16px
+
+// test center
+%center
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		height: 2px
+		background-color: red
+		+try(-50%)
+		z-index: 20
+
+=inputsdw
+	background-color: #f7f6f4
+	box-shadow: inset 0 0 10px 2px rgba(0,0,0,0.1)
+
+// common blocks
+.out
+	position: relative
+	overflow: hidden
+	+clr
+	&_partner
+		min-height: 100vh
+		padding-bottom: 113px
+		+r(800)
+			padding-bottom: 145px
+
+.layout
+	// can`t be relative
+	max-width: 1360px
+	width: 96%
+	margin: 0 auto
+.half
+	position: relative
+	width: 50%
+	padding-left: 10px
+	margin-bottom: auto
+	+r(1070)
+		width: 100%
+	&_flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&_l
+		display: flex
+		align-items: flex-start
+		height: auto
+		flex-wrap: wrap
+		align-self: stretch
+	&_s
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: space-between
+		height: auto
+		margin-bottom: 0
+		flex-wrap: wrap
+		align-self: stretch
+	&_end
+		display: flex
+		margin-left: auto
+		justify-content: flex-end
+		height: auto
+		flex-wrap: wrap
+		align-self: stretch
+
+a
+	text-decoration: none
+	outline: none
+	color: $text
+
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+b, strong
+	font-weight: normal
+
+hr
+	border-color: $border
+	margin: 0
+

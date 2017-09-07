@@ -1,0 +1,59 @@
+@font-face
+	font-family: "svgfont"
+	src: url('../fonts/svgfont.eot')
+	src: url('../fonts/svgfont.eot?#iefix') format('eot'), url('../fonts/svgfont.woff') format('woff'), url('../fonts/svgfont.woff2') format('woff2'), url('../fonts/svgfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+$icon-02: "\EA02"
+$icon-03: "\EA03"
+$icon-04: "\EA04"
+$icon-05: "\EA05"
+$icon-06: "\EA06"
+$icon-01: "\EA01"
+$icon-07: "\EA07"
+$icon-08: "\EA08"
+$icon-app-play: "\EA09"
+$icon-app-store: "\EA0A"
+$icon-logo: "\EA0B"
+$icon-social: "\EA0C"
+
+
+%icon
+	font-family: "svgfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-02:before
+	content: $icon-02
+.icon-03:before
+	content: $icon-03
+.icon-04:before
+	content: $icon-04
+.icon-05:before
+	content: $icon-05
+.icon-06:before
+	content: $icon-06
+.icon-01:before
+	content: $icon-01
+.icon-07:before
+	content: $icon-07
+.icon-08:before
+	content: $icon-08
+.icon-app-play:before
+	content: $icon-app-play
+.icon-app-store:before
+	content: $icon-app-store
+.icon-logo:before
+	content: $icon-logo
+.icon-social:before
+	content: $icon-social

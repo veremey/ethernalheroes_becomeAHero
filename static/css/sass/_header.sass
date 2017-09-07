@@ -1,0 +1,122 @@
+.logo
+	display: inline-block
+	font-size: 0
+	width: 80px
+	+tr(.4s)
+	&:hover
+		opacity: .8
+	&__img
+		display: inline-block
+		vertical-align: top
+		max-width: 100%
+
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 200
+	height: $headerHeight
+	+tr(.8s)
+	&_inner
+		height: 128px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+tr(.8s)
+	&-fix
+		height: 70px
+		background-color: rgba(30, 30, 30, .9)
+		.header_inner
+			height: 100%
+	.half
+		position: static
+		height: 100%
+		+r(1070)
+			width: 60%
+		+r(900)
+			justify-content: flex-end
+
+.menu
+	&__box
+		display: none
+		position: fixed
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: #000
+		// opacity: 0.5
+		.layout
+			display: flex
+			align-items: flex-end
+			flex-direction: column
+			justify-content: center
+			height: 100%
+	&__list
+		font-size: 0
+	&__item
+		margin-bottom: 20px
+	&__link
+		font-size: 24px
+		color: $text
+		+ab
+		&:hover
+			color: $blue
+	&__footer
+		margin-top: 40px
+		padding-left: 20px
+		width: 50%
+		+r(1070)
+			width: 60%
+		+r(880)
+			width: 90%
+		.menu__link
+			display: inline-block
+			padding: 7px 20px
+			border-radius: 20px
+			margin-right: 20px
+		.is-colored
+			background-color: $blue
+			&:hover
+				color: #000
+	.nav
+		width: 50%
+		padding-left: 20px
+		+r(1070)
+			width: 60%
+		+r(880)
+			width: 90%
+
+.navigator
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding-right: 64px
+	opacity: 1
+	+r(900)
+		position: absolute
+		top: 50%
+		right: 80px
+		+try(-50%)
+	&.is-active
+		opacity: 0
+.user
+	+r(900)
+		display: none
+	&__link
+		display: inline-block
+		padding: 10px 25px
+		border-radius: 26px
+		&.is-colored
+			background-color: $blue
+			color: #fff
+	&__mail
+		display: inline-block
+		color: $blue
+		font-size: $fz
+		+al
+		+tr(.4s)
+		&:hover
+			color: $text

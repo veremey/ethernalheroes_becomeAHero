@@ -1,0 +1,142 @@
+$icons: (0:0)
+$icons: map-merge($icons,(icon-bird-green: (X: -425px, Y:-177px, W: 12px, H: 9px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-calendar: (X: -395px, Y:-53px, W: 41px, H: 44px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-check: (X: -425px, Y:-157px, W: 14px, H: 10px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-clock: (X: -395px, Y:0px, W: 44px, H: 43px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-coin: (X: -395px, Y:-107px, W: 37px, H: 40px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-github: (X: -422px, Y:-321px, W: 15px, H: 15px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-mouse: (X: -395px, Y:-265px, W: 16px, H: 20px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-next-blue: (X: -395px, Y:-295px, W: 16px, H: 16px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-next-gray: (X: -421px, Y:-295px, W: 16px, H: 16px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-next: (X: -395px, Y:-197px, W: 24px, H: 24px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-prev: (X: -395px, Y:-231px, W: 24px, H: 24px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(icon-telegram: (X: -395px, Y:-321px, W: 17px, H: 15px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(marker: (X: -395px, Y:-157px, W: 20px, H: 30px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(pie: (X: 0px, Y:0px, W: 385px, H: 385px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,(reddit: (X: -421px, Y:-265px, W: 17px, H: 16px, TW: 439px, TH: 385px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+	$icon: map-get($icons, $icon)
+	@return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	width: icon-attr($iconName, W)
+	height: icon-attr($iconName, H)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	$width: icon-attr($iconName, W)
+	$height: icon-attr($iconName, H)
+	width: $width/2
+	height: $height/2
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+	$tw: icon-attr($iconName, TW) 	
+	$th: icon-attr($iconName, TH)
+	background-size: $tw/2 $th/2  	
+
+
+@mixin s($i)
+	+sprite($i)
+@mixin sp($i)
+	+sprite-position($i)
+@mixin sr($i)
+	+sprite-retina($i)	
+
+//
+//.icon-icon-bird-green
+//	width: 12px
+//	height: 9px
+//	background-image: url('../img/sprite.png')
+//	background-position: -425px -177px
+//
+//.icon-icon-calendar
+//	width: 41px
+//	height: 44px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px -53px
+//
+//.icon-icon-check
+//	width: 14px
+//	height: 10px
+//	background-image: url('../img/sprite.png')
+//	background-position: -425px -157px
+//
+//.icon-icon-clock
+//	width: 44px
+//	height: 43px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px 0px
+//
+//.icon-icon-coin
+//	width: 37px
+//	height: 40px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px -107px
+//
+//.icon-icon-github
+//	width: 15px
+//	height: 15px
+//	background-image: url('../img/sprite.png')
+//	background-position: -422px -321px
+//
+//.icon-icon-mouse
+//	width: 16px
+//	height: 20px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px -265px
+//
+//.icon-icon-next-blue
+//	width: 16px
+//	height: 16px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px -295px
+//
+//.icon-icon-next-gray
+//	width: 16px
+//	height: 16px
+//	background-image: url('../img/sprite.png')
+//	background-position: -421px -295px
+//
+//.icon-icon-next
+//	width: 24px
+//	height: 24px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px -197px
+//
+//.icon-icon-prev
+//	width: 24px
+//	height: 24px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px -231px
+//
+//.icon-icon-telegram
+//	width: 17px
+//	height: 15px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px -321px
+//
+//.icon-marker
+//	width: 20px
+//	height: 30px
+//	background-image: url('../img/sprite.png')
+//	background-position: -395px -157px
+//
+//.icon-pie
+//	width: 385px
+//	height: 385px
+//	background-image: url('../img/sprite.png')
+//	background-position: 0px 0px
+//
+//.icon-reddit
+//	width: 17px
+//	height: 16px
+//	background-image: url('../img/sprite.png')
+//	background-position: -421px -265px
+//

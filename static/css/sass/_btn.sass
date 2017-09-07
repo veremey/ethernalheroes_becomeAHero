@@ -1,0 +1,64 @@
+.btn
+	&-toggler
+		position: relative
+		padding-left: 40px
+		display: inline-block
+		background-color: $n
+		border: none
+		outline: none
+		white-space: nowrap
+		// span
+		font-size: $fz
+		letter-spacing: .02em
+		color: $text
+		+r(900)
+			font-size: 0
+			height: 18px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 24px
+			height: 50%
+			border-top: 2px solid $text
+			border-bottom: 1px solid $text
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 50%
+			width: 24px
+			border-top: 1px solid $text
+			border-bottom: 2px solid $text
+		&.is-active
+			z-index: 100
+			&:before
+				top: 8px
+				left: 4px
+
+				border-bottom: none
+				transform-origin: top center
+				+rotate(40)
+			&:after
+				bottom: 8px
+				left: 4px
+				border-top: none
+				transform-origin: bottom center
+				+rotate(-40)
+	&-small
+		display: inline-block
+		padding: 15px 28px 16px
+		background-color: $blue
+		border-radius: 46px
+		border: none
+		outline: none
+		line-height: .9
+		color: #fff
+		font-size: $fz
+		+al
+		+tr(.4s)
+		&:hover
+			background-color: $text
+			color: $border

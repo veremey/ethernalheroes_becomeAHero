@@ -1,0 +1,35 @@
+.select
+	position: absolute
+	top: 2px
+	right: 0
+	display: inline-block
+	height: 36px
+	padding: 2px 16px
+	border-radius: 16px
+	border: 1px solid $border
+	overflow: hidden
+	cursor: pointer
+	+r(900)
+		top: -18px
+	&.is-active
+		height: auto
+		background-color: rgba(30, 30, 30, .9)
+	&__text
+		display: inline-block
+		padding: 5px 0
+	&__list
+		margin: 0
+	li
+		padding: 5px 0
+		&.is-active
+			display: none
+.half_end
+	.select
+		top: 46px
+		+tr(.8s)
+.header-fix
+	.half_end
+		.select
+			top: 16px
+			+r(880)
+				top: -20px

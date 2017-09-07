@@ -1,0 +1,166 @@
+extends _layout
+block content
+	.out
+		include layout/header-simple.pug
+
+		section.money.is-animated
+			.layout.section-inner.border-bottom.bottom-space
+				.half.half_l
+					h6.title-small Total tokens contributed
+					p.section__desc.section__desc_upper 25&nbsp;921&nbsp;669
+					p.section__desc.section__desc_upper.text-gray $11&nbsp;970&nbsp;742
+				.half
+					h6.title-small 8 921 transactions
+					.money-wrap
+						p.section__desc.section__desc_upper
+							span.section__desc.section__desc_upper.text-fiolet ETH
+							| 25&nbsp;921&nbsp;669
+					.money-wrap
+						p.section__desc.section__desc_upper
+							span.section__desc.section__desc_upper.text-orange ETH
+							| $11&nbsp;970&nbsp;742
+					.money-wrap
+						p.section__desc.section__desc_upper
+							span.section__desc.section__desc_upper.text-aqua ETH
+							| $11&nbsp;970&nbsp;742
+			section.section-light.is-animated.pb-zero
+				.layout.section-inner
+					.half.half_l
+						p.section__desc.section__desc_small Your token balance
+						h6.title-section.title-section_light.text-blue
+							i.icon-coin
+							| 32&nbsp;500
+						.currency
+							p.section__desc.section__desc_small Your contribution
+							.money-wrap
+								p.section__desc.section__desc_upper
+									span.section__desc.section__desc_upper.text-fiolet ETH
+									| 25&nbsp;921&nbsp;669
+							.money-wrap
+								p.section__desc.section__desc_upper
+									span.section__desc.section__desc_upper.text-orange ETH
+									| 11&nbsp;970&nbsp;742
+							.money-wrap
+								p.section__desc.section__desc_upper
+									span.section__desc.section__desc_upper.text-aqua ETH
+									| 11&nbsp;970&nbsp;742
+
+					.half
+						h6.title-section.top-offset-40 Contributions
+						.section-box
+							h6.title-small Master Wallet
+							p.section__desc.section__desc_small Your ETH wallet number for buying DMarket tokens. The tokens will be sent to your wallet after the token sale phase #2.
+						form(method='POST', action='/', autocomplete='on').wallet__form.js-validate.top-offset-40
+								fieldset.wallet__fieldset
+									input(type='tel', name='wallet', required).wallet__input.js-wallet
+									label(for="wallet").wallet__label Wallet number
+									i.icon-bird-green
+			section.section-light.is-animated.pb-zero
+				.layout.tab
+					.tab__item.is-active(data-tab="tab__conteiner-01")
+						a(href="#").tab__link Contributions in ETH
+					.tab__item(data-tab="tab__conteiner-02")
+						a(href="#").tab__link Contributions in BTC
+					.tab__item(data-tab="tab__conteiner-03")
+						a(href="#").tab__link Contributions in Skins
+
+				section.section-light.is-animated.pb-zero
+
+					.tab__conteiner.tab__conteiner-01.is-open
+						.layout.section-inner
+							.half.half_l
+								form(method='POST', action='/', autocomplete='on').wallet__form.js-validate.top-offset-40
+									fieldset.wallet__fieldset
+										input(type='tel', name='Eth', required).wallet__input.js-wallet
+										label(for="Eth").wallet__label Your contributions in ETH
+
+							.half
+								form(method='POST', action='/', autocomplete='on').wallet__form.js-validate.top-offset-40
+									fieldset.wallet__fieldset
+										input(type='tel', name='publickWallet', required).wallet__input.js-wallet
+										label(for="publickWallet").wallet__label Public wallet for contribution
+										i.icon-bird-green
+									.wallet__footer
+										button(type="submit").btn-small Copy
+
+					.tab__conteiner.tab__conteiner-02
+						.layout.section-inner
+							.half.half_l
+								p.section__desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, cupiditate architecto iure natus! Voluptates aperiam id perferendis vel iure nesciunt perspiciatis quaerat, reprehenderit earum, porro cupiditate tempora saepe. Quam, pariatur.
+
+							.half
+								form(method='POST', action='/', autocomplete='on').wallet__form.js-validate.top-offset-40
+									fieldset.wallet__fieldset
+										input(type='tel', name='wallet', required).wallet__input.js-wallet
+										label(for="wallet").wallet__label Public wallet for contribution
+										i.icon-bird-green
+					.tab__conteiner.tab__conteiner-03
+						.layout.section-inner
+							.half.half_l
+								p.section__desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, cupiditate architecto iure natus! Voluptates aperiam id perferendis vel iure nesciunt perspiciatis quaerat, reprehenderit earum, porro cupiditate tempora saepe. Quam, pariatur.
+
+							.half
+								p.section__desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, cupiditate architecto iure natus! Voluptates aperiam id perferendis vel iure nesciunt perspiciatis quaerat, reprehenderit earum, porro cupiditate tempora saepe. Quam, pariatur.
+
+
+		include layout/footer.pug
+		.popup
+			.popup__overlay
+			.popup__window.js-join
+				button.btn-toggler(data-close="popup").js-close.is-active Close
+				.layout.popup__center
+					.section-inner
+						.half.half_l
+							h5.title-section Join ICO
+						.half
+							form(method='POST', action='/', autocomplete='on').data__form.js-validate
+								fieldset.data__fieldset
+									input(type='email', name='email', required).data__input
+									label(for="email").data__label Email
+								fieldset.data__fieldset
+									input(type='password', name='password', required).data__input#password
+									label(for="password").data__label Password
+								fieldset.data__fieldset
+									input(type='password', name='confirm_password', required).data__input
+									label(for="confirm_password").data__label Repeat password
+								.data__footer
+									button(type="submit").btn-small Sign Up
+									p.data__desc Already have an account?
+										a(href="#", data-ppp="js-login").data__link.js-ppp Login
+
+			.popup__window.js-login
+				button.btn-toggler(data-close="popup").js-close.is-active Close
+				.layout.popup__center
+					.section-inner
+						.half.half_l
+							h5.title-section Log in
+						.half
+							form(method='POST', action='/', autocomplete='on').data__form.js-validate
+								fieldset.data__fieldset
+									input(type='email', name='email', required).data__input
+									label(for="email").data__label Email
+								fieldset.data__fieldset
+									input(type='password', name='password', required).data__input#password
+									label(for="password").data__label Password
+									a(href="#", data-ppp="js-subcribtion").data__link.js-ppp Forgot password?
+								.data__footer
+									button(type="submit").btn-small Sign Up
+									p.data__desc Already have an account?
+										a(href="#", data-popup="js-login").data__link.js-ppp Login
+
+			.popup__window.js-subcribtion
+				button.btn-toggler(data-close="popup").js-close.is-active Close
+				.layout.popup__center
+					.section-inner
+						.half.half_l
+						//- 	h5.title-section Log in
+						.half
+							h5.title-section Subcribtion
+							form(method='POST', action='/', autocomplete='on').data__form.js-validate
+								fieldset.data__fieldset
+									input(type='email', name='email', required).data__input
+									label(for="email").data__label Email
+								.data__footer
+									button(type="submit").btn-small Subscribe
+
+

@@ -1,0 +1,107 @@
+.data
+	&__form
+		width: 425px
+		max-width: 100%
+	&__fieldset
+		position: relative
+		margin-bottom: 20px
+		+clr
+		&.input--filled
+			.data
+				&__label
+					top: 4px
+					font-size: 12px
+				&__input
+					padding-top: 12px
+		.data__link
+			float: right
+			margin-top: 10px
+	&__input
+		display: block
+		width: 100%
+		height: 60px
+		background-color: $n
+		border: none
+		border-bottom: 1px solid $border
+		outline: none
+		font-size: 24px
+		color: $text
+		+al
+		&.has-error
+			border-color: #EA227D
+	&__label
+		position: absolute
+		top: 10px
+		left: 0
+		font-size: 24px
+		color: #757575
+		+al
+		pointer-events: none
+		+tr(.4s)
+	&__footer
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-top: 40px
+	&__desc
+		font-size: $fz
+		color: $text
+		+al
+	&__link
+		font-size: $fz
+		color: $blue
+		+al
+		&:hover
+			opacity: .8
+
+.wallet
+	&__form
+		width: 100%
+	&__fieldset
+		@extend .data__fieldset
+		&.input--filled
+			.wallet
+				&__label
+					top: 4px
+					font-size: 12px
+				&__input
+					padding-top: 12px
+	&__input
+		@extend .data__input
+	&__label
+		@extend .data__label
+	&__footer
+		margin-top: 40px
+
+
+#email-error,
+#password-error,
+#confirm_password-error,
+#publickWallet-error
+	position: absolute
+	color: #ff4747
+	font-size: $fz
+	// padding-left: 40px
+	padding-top: 20px
+	top: 100%
+
+#wallet-error
+	position: absolute
+	color: #ff4747
+	font-size: $fz
+	padding-left: 40px
+	padding-top: 20px
+	&:before
+		content: '\26A0'
+		position: absolute
+		top: 20px
+		left: 0
+		display: inline-block
+		font-size: 18px
+		width: 20px
+		height: 20px
+
+#email-error,
+#password-error,
+#confirm_password-error
+	padding-top: 5px

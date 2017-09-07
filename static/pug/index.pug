@@ -1,0 +1,566 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+
+		section.startscreen
+			.startscreen__conteiner.layout
+				.startscreen__box
+					h1.title-biggest Become <br> a Hero!
+					.timer
+						p.timer__desc Presale stars in:
+						.timer__box(data-finaldate-year='2017', data-finaldate-month='10', data-finaldate-day='10')
+					.startscreen__footer
+						a(href="#").startscreen__link
+							| Apply for presale
+							i.icon-next-blue
+						a(href="#").startscreen__link
+							| Subscribe me for updates
+							i.icon-next-blue
+				a(href="#").scroll-next
+					i.icon-mouse
+					span.section__desc_small Scroll
+				img(src="static/img/hero.png", alt="hero").parallax
+				//- img(src="static/img/hero.png", alt="hero").startscreen__img
+				.share.header__share
+					a(href="#").share__link
+						i.fa.fa-paper-plane-o
+					a(href="#").share__link
+						i.fa.fa-facebook-square
+					a(href="#").share__link
+						i.fa.fa-twitter
+					a(href="#").share__link
+						i.fa.fa-github
+					a(href="#").share__link
+						i.fa.fa-slack
+					a(href="#").share__link
+						i.fa.fa-reddit-alien
+		section.section-dark.is-animated
+			.layout.section-inner
+				.half.half_l
+					h3.title-section Introdaction
+					.tag
+						p.tag__desc Avalible on:
+							span.tag__span iOS
+								span.tag__span Android
+								span.tag__span PC
+				.half
+					p.section__desc Ethernal Heroes - multiplatform game in the genre of the collector's card button in the fantasy setting. The player will have to assemble a team of legendary heroes and compete with the strength of his squad and strategic talent with other players in endless fights and tournaments, collecting, collecting and strengthening new unique heroes cards.
+			.layout
+				.slide
+					.slide__item
+						.slide__pic
+							img(src="static/img/intro.jpg", alt="").slide__img
+						.slide__info
+							p.slide__num 1
+							p.slide__desc Each card of the hero is represented in a limited edition and can be obtained by playing a game or bought at a free card auction from other players.
+					.slide__item
+						.slide__pic
+							img(src="static/img/intro.jpg", alt="").slide__img
+						.slide__info
+							s.slide__num 2
+							p.slide__desc Each card of the hero is represented in a limited edition and can be obtained by playing a game or bought at a free card auction from other players.
+					.slide__item
+						.slide__pic
+							img(src="static/img/intro.jpg", alt="").slide__img
+						.slide__info
+							p.slide__num 3
+							p.slide__desc Each card of the hero is represented in a limited edition and can be obtained by playing a game or bought at a free card auction from other players.
+		section.section-light.pb-zero.is-animated
+			.layout.section-inner
+				.half.half_l
+					h3.title-section Game <br> description
+				.half
+					p.section__desc The world of Ethernium is torn apart by an endless war that is destroying everything in its path. The insidious, merciless, legions of invincible demons are preparing to wipe out all life from the face of the earth. In an era of endless war, survival depends only on your courage and winning strategy
+			//- .half.half_l(style="position: relative")
+			.layout.section-inner
+				.half(style="position: relative")
+					img(src="static/img/ipad.png", alt="").ipad.parallax
+				.half.half_end
+					.column
+						.column__item
+							h6.title-small Choose one of the four factions!
+							p.column__desc Become the leader of the mysterious night elves, the elder of the crafty magicians, the ruler of the ruthless demons, or head the Order of the Right Inquisitors, watching the bloody battles collapse alliances and kill entire nations.
+						.column__item
+							h6.title-small Call the hero to lead your army!
+							p.column__desc Let your troops fight side by side with the strongest heroes. Hardened in battle brave, whose level grows with each battle, can use spells, strengthen troops and inflict horror on your enemies.
+						.column__item
+							h6.title-small Take part in the epic events!
+							p.column__desc Before your eyes will pass the events of the whole historical era of Ethernium.
+							p.column__desc During the passage of the story you will learn about the mystery of the opening of the gates between the worlds, the tragic destruction of the kingdom of elves, the treachery of the inquisitor Erinyes and the battle of all the kingdoms at the gates of anger.
+		section.section-light.is-animated
+			.layout
+				h5.doc__title Cards
+				.details
+					.details__item
+						.details__item_wrap
+							.details__box
+								.details__text
+									h4.title-section Warrior
+									p.details__desc Infinite fighters who obey only the church. Their faith is unshakable, as is the desire to cleanse the world of the products of filth.
+									p.details__desc The warrior has immunity to any curses, at the moment of entering the battlefield it deals damage to all demon creatures.
+							.details__pic
+								img(src="static/img/warior.jpg", alt="")
+
+					.details__item
+						.details__item_wrap
+							.details__box
+								.details__text
+									h4.title-section digital <br> reality
+									p.details__desc Infinite fighters who obey only the church. Their faith is unshakable, as is the desire to cleanse the world of the products of filth.
+									p.details__desc The warrior has immunity to any curses, at the moment of entering the battlefield it deals damage to all demon creatures.
+							.details__pic
+								img(src="static/img/warior-01.jpg", alt="")
+		section.section-dark.is-animated
+			.layout.section-inner
+				.half.half_l
+					h3.title-section Roadmap
+				.half
+					.road
+						.road__item.road__item-1.road__item_check
+							p.road__desc Idea of the project, concept development <br>
+								time(datetime="2017-06").road__date June 2017
+						.road__item.road__item-2.road__item_check
+							p.road__desc The project team was formed <br>
+								time(datetime="2017-06").road__date July 2017
+						.road__item.road__item-3.road__item_check
+							p.road__desc The beginning of game development, pre-sale <br>
+								time(datetime="2017-06").road__date August 2017
+						.road__item.road__item-4.road__item_check
+							p.road__desc Crowdsale <br>
+								time(datetime="2017-06").road__date Oktober 2017
+						.road__item.road__item-5.road__item_now
+							p.road__desc Demo build <br>
+								time(datetime="2017-06").road__date January 2018
+						.road__item.road__item-6
+							p.road__desc Alpha version <br>
+								time(datetime="2017-06").road__date April 2018
+						.road__item.road__item-7
+							p.road__desc Soft launch <br>
+								time(datetime="2017-06").road__date July 2018
+						.road__item.road__item-8
+							p.road__desc Global launch <br>
+								time(datetime="2017-06").road__date Oktober 2018
+						.road__item.road__item-9
+							p.road__desc Launch of the auction of tokens <br>
+								time(datetime="2017-06").road__date December 2018
+		section.section-light.is-animated
+			.layout.section-inner
+				.half.half_s
+					h3.title-section Market  &#38; <br>  industry
+					b.section__desc.section__desc_blue How will the genre and its revenues change, when will the opportunity to win real money be added?
+					img(src="static/img/map.png", alt="").map-img
+				.half
+					.population
+						h4.population__title 40&nbsp;000&nbsp;000
+						p.population__small active players on CCDG market
+					.population
+						h4.population__title $ 1.4 BILLION
+						p.population__small The total volume of the CCDG market
+					p.section__desc The CCDG market has more than 40 million active players worldwide, most of which live in the US and Asia, where the genre is traditionally popular. The genre is characterized by a high average check per player and a stable loyal audience.
+					p.section__desc The total volume of the CCDG market is 1.4 billion USD. And all this amount of money is spent on buying boosters and pumping cards. At the same time, according to statistics, only 4000 pro-players all over the world earn money due to their skills in games.
+		section.section-dark.is-animated
+			.layout.section-inner
+				.half.half_l
+					h3.title-section Token <br> functions
+					.token
+						svg.icon-lamp(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 83.5 82.167', style='enable-background:new 0 0 83.5 82.167;', xml:space='preserve')
+							g
+								path.st0(d='M34.589,68.166c-0.002-6.46-2.465-12.924-7.396-17.857c-3.623-3.617-5.858-8.616-5.858-14.142\
+								c0-11.045,8.953-20,19.998-20s19.999,8.954,19.999,20c0,5.525-2.236,10.524-5.856,14.142c-4.934,4.934-7.396,11.397-7.4,17.857\
+								H34.589z')
+								path.st0(d='M48.074,68.166H34.587v10.5c0,1.375,1.127,2.501,2.501,2.501h8.485c1.375,0,2.501-1.126,2.501-2.501V68.166z')
+								path.st0(d='M32.492,27.327c-4.882,4.881-4.882,12.795,0.002,17.68C27.61,40.122,27.61,32.208,32.492,27.327z')
+								path.st0(d='M41.332,1.167v7.5V1.167z')
+								path.st0(d='M27.939,3.83l2.872,6.932L27.939,3.83z')
+								path.st0(d='M15.929,25.645l-6.932-2.873L15.929,25.645z')
+								path.st0(d='M66.736,46.688l6.932,2.873L66.736,46.688z')
+								path.st0(d='M54.727,3.83l-2.869,6.932L54.727,3.83z')
+								path.st0(d='M15.929,46.688l-6.932,2.873L15.929,46.688z')
+								path.st0(d='M73.671,22.772l-6.932,2.873L73.671,22.772z')
+								path.st0(d='M13.834,36.167H1.333H13.834z')
+								path.st0(d='M81.333,36.167H68.831H81.333z')
+								path.st0(d='M21.889,55.61l-8.841,8.842L21.889,55.61z')
+								path.st0(d='M69.616,7.882l-8.837,8.837L69.616,7.882z')
+								path.st0(d='M69.616,64.448l-8.837-8.841L69.616,64.448z')
+								path.st0(d='M13.05,7.878l8.839,8.841L13.05,7.878z')
+
+						p.token__desc By analogy with poker rooms, part of each player's bet of 2% will be held in the form of a platform commission.
+						p.token__desc From these commissions will be formed a bonus pool, which will be played monthly in paid and free tournaments.
+				.half
+					p.section__desc The main feature of Ethernal Heroes is the ability to implement all types of in-game transactions in HERO tokens that comply with the ERC-20 standard. What are the HERO tokens for:
+					ul.token__list
+						li.token__item
+							p.section__desc Bets between players in games 1-on-1
+						li.token__item
+							p.section__desc Payment for participation in tournaments held on the platform
+						li.token__item
+							p.section__desc Possibility of input / output of HERO tokens to exchanges
+						li.token__item
+							p.section__desc Buying boosters and game content
+						li.token__item
+							p.section__desc Using in-game in-game items for transactions between players
+			.layout
+				img(src="static/img/tel.png", alt="").img-center
+			.layout.section-inner
+				.half.half_l
+					h3.title-section Benefits <br> & bonuses
+				.half
+					p.section__desc We want to please your investors and players, therefore we provide the following bonuses:
+					ul.token__list
+						li.token__item
+							p.section__desc We give a limited set of legendary cards that ordinary players will not have
+						li.token__item
+							p.section__desc Possibility of closed testing of the alpha version of the game
+						li.token__item
+							p.section__desc Possibility of input / output of HERO tokens to exchanges
+						li.token__item
+							p.section__desc The absence of a system commission for the 1st year of work after the launch of the game
+		section.section-light.pb-zero.is-animated
+			.layout
+				.section-inner
+					.half.half_l
+						h3.title-section Tokenization <br> structure
+					.half
+						p.section__desc ICO launch <br>
+							time.section__date
+								i.icon-calendar
+								| 9 oct 2017
+							time.section__date
+								i.icon-clock
+								| 12:00 CET
+				hr
+		section.section-light.pb-zero.is-animated
+			.layout
+				.section-inner.bottom-offset-100
+					.half.half_l
+						h6.doc__title Token distribution
+
+						//- #canvas-holder(style='width:40%')
+						//- 	canvas#chart-area
+						//- button#randomizeData Randomize Data
+						//- button#addDataset Add Dataset
+						//- button#removeDataset Remove Dataset
+
+						.pie
+							.pie__pic
+								img(src="static/img/pie.png", alt="")
+							.pie__labels
+								p.pie__tip.pie__tip_01 0.8%
+								p.pie__tip.pie__tip_02 1.2%
+								p.pie__tip.pie__tip_03 6%
+								p.pie__tip.pie__tip_04 40%
+								p.pie__tip.pie__tip_05 48%
+					.half.half_s
+						h6.doc__title  Total amount of tokens — 250 000 000
+						ul.pie__list
+							li.pie__item
+								i.pie__color.color_lightgrean
+								p.pie__desc 120 000 000 — Reserve of tokens
+							li.pie__item
+								i.pie__color.color_blue
+								p.pie__desc 100 000 000 — Maximum amount for crowdsale
+							li.pie__item
+								i.pie__color.color_rose
+								p.pie__desc 15 000 000 — Team
+							li.pie__item
+								i.pie__color.color_orange
+								p.pie__desc 3 000 000 — Advisors
+							li.pie__item
+								i.pie__color.color_yellow
+								p.pie__desc 2 000 000 — Bounty
+				hr
+		section.section-light.is-animated
+			.layout
+				.section-inner
+					.half.half_l
+						h6.doc__title Distribution of bonuses for early ICO members
+				.horizontal.is-animated
+					ul.horizontal__list
+						li.horizontal__item
+							.horizontal__num 0-10000
+							.horizontal__line.color_blue
+							.horizontal__pers 30%
+						li.horizontal__item
+							.horizontal__num 10000-20000
+							.horizontal__line.color_rose.w-xl
+							.horizontal__pers 20%
+						li.horizontal__item
+							.horizontal__num 20000-45000
+							.horizontal__line.color_orange.w-l
+							.horizontal__pers 15%
+						li.horizontal__item
+							.horizontal__num 45000-70000
+							.horizontal__line.color_lightgrean.w-m
+							.horizontal__pers 5%
+						li.horizontal__item
+							.horizontal__num 70000-90000
+							.horizontal__line.color-blue.w-z
+							.horizontal__pers 0%
+		section.section-dark.is-animated
+			.layout.header-inner
+				h3.title-section Documents
+				.doc.doc_correct
+					.read
+						.read__wrap
+							.read__pic
+								img(src="static/img/doc/doc-01.jpg", alt="").read__img
+							.read__text
+								h6.read__title White Paper
+								.read__lang
+									a(href="#", download).read__link en
+									a(href="#", download).read__link ru
+									a(href="#", download).read__link ch
+					.read
+						.read__wrap
+							.read__pic
+								img(src="static/img/doc/doc-02.jpg", alt="").read__img
+							.read__text
+								h6.read__title Tokens Sale Policy
+								.read__lang
+									a(href="#", download).read__link en
+					.read
+						.read__wrap
+							.read__pic
+								img(src="static/img/doc/doc-03.jpg", alt="").read__img
+							.read__text
+								h6.read__title White Paper
+								.read__lang
+									a(href="#", download).read__link en
+									a(href="#", download).read__link ru
+									a(href="#", download).read__link ch
+					.read
+						.read__wrap
+							.read__pic
+								img(src="static/img/doc/doc-04.jpg", alt="").read__img
+							.read__text
+								h6.read__title Tokens Sale Policy
+								.read__lang
+									a(href="#", download).read__link en
+
+					.read
+						.read__wrap
+							.read__pic
+								img(src="static/img/doc/doc-04.jpg", alt="").read__img
+							.read__text
+								h6.read__title Tokens Sale Policy
+								.read__lang
+									a(href="#", download).read__link en
+
+				.doc
+					h6.doc__title Publications
+					.public
+						.public__item
+							.public__top
+								p.public__big Interview with Ethernal Heroes: the first card game with ingame crypto purchase
+							.public__footer
+								img(src="static/img/nyt.png", alt="").public__img
+								p.public__read Read more
+						.public__item
+							.public__top
+								p.public__big Wall Street Journal Editor Admonishes Reporters Over Trump Coverage
+							.public__footer
+								img(src="static/img/nyt.png", alt="").public__img
+								p.public__read Read more
+						.public__item
+							.public__top
+								p.public__big Interview with Ethernal Heroes: the first card game with ingame crypto purchase
+							.public__footer
+								img(src="static/img/nyt.png", alt="").public__img
+								p.public__read Read more
+						.public__item
+							.public__top
+								p.public__big Wall Street Journal Editor Admonishes Reporters Over Trump Coverage
+							.public__footer
+								img(src="static/img/nyt.png", alt="").public__img
+								p.public__read Read more
+
+				.doc
+					h6.doc__title Partners
+					.public
+						.public__item
+							.public__box
+								a(href="#").public__pic
+									img(src="static/img/partners/01.png", alt="").public__logo
+								.public__text
+									h5.public__title Acquired.io
+									p.public__desc Operational activities and key strategic decisions in the company. Co-owner of the company Game Garden, an expert in the field of desktop monetization and mobile solutions, user acquisition for mobile games. Experience of arbitrage of traffic since 2009. He was engaged in promotion of products: Farmdale, Fairy Kingdom, Fairy Farm.
+
+						.public__item
+							.public__box
+								a(href="#").public__pic
+									img(src="static/img/partners/02.png", alt="").public__logo
+								.public__text
+									h5.public__title Game-Garden.com
+									p.public__desc Operational activities and key strategic decisions in the company. Co-owner of the company Game Garden, an expert in the field of desktop monetization and mobile solutions, user acquisition for mobile games. Experience of arbitrage of traffic since 2009. He was engaged in promotion of products: Farmdale, Fairy Kingdom, Fairy Farm.
+
+				.doc
+					h6.doc__title Team
+					.profile
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="static/img/team/01.jpg", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="static/img/team/01.jpg", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="static/img/team/01.jpg", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="static/img/team/01.jpg", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+
+				.doc
+					h6.doc__title Advisors
+					.profile
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="static/img/team/01.jpg", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+						.profile__item
+							.profile__wrap
+								.profile__pic
+									img(src="", alt="").profile__img
+								.profile__header
+									h5.profile__title Sergey Dzhilnikov
+									p.profile__position CHIEF TECHNOLOGY OFFICER
+								.profile__text
+									p.profile__desc Perfectionist with more than 10 years of experience in the development of highly loaded systems. System architect and optimizer for complex business processes. Expert in design and development of back-end and front-end. In the company Game Garden has built a highly loaded analytical mechanism GENIE.
+									p.profile__desc For him, nothing is impossible.
+
+		include layout/footer.pug
+		.popup
+			.popup__overlay
+			.popup__window.js-join
+				button.btn-toggler(data-close="popup").js-close.is-active Close
+				.layout.popup__center
+					.section-inner
+						.half.half_l
+							h5.title-section Join ICO
+						.half
+							form(method='POST', action='/', autocomplete='on').data__form.js-validate
+								fieldset.data__fieldset
+									input(type='email', name='email', required).data__input
+									label(for="email").data__label Email
+								fieldset.data__fieldset
+									input(type='password', name='password', required).data__input#password
+									label(for="password").data__label Password
+								fieldset.data__fieldset
+									input(type='password', name='confirm_password', required).data__input
+									label(for="confirm_password").data__label Repeat password
+								.data__footer
+									button(type="submit").btn-small Sign Up
+									p.data__desc Already have an account?
+										a(href="#", data-ppp="js-login").data__link.js-ppp Log in
+
+			.popup__window.js-login
+				button.btn-toggler(data-close="popup").js-close.is-active Close
+				.layout.popup__center
+					.section-inner
+						.half.half_l
+							h5.title-section Log in
+						.half
+							form(method='POST', action='/', autocomplete='on').data__form.js-validate
+								fieldset.data__fieldset
+									input(type='email', name='email', required).data__input
+									label(for="email").data__label Email
+								fieldset.data__fieldset
+									input(type='password', name='password', required).data__input#password
+									label(for="password").data__label Password
+								a(href="#", data-ppp="js-subcribtion").data__link.js-ppp Forgot password?
+								.data__footer
+									button(type="submit").btn-small Log in
+									p.data__desc Already have an account?
+										a(href="#", data-popup="js-join").data__link.js-ppp Sign Up
+
+			.popup__window.js-subcribtion
+				button.btn-toggler(data-close="popup").js-close.is-active Close
+				.layout.popup__center
+					.section-inner
+						.half.half_l
+						//- 	h5.title-section Log in
+						.half
+							h5.title-section Subcribtion
+							form(method='POST', action='/', autocomplete='on').data__form.js-validate
+								fieldset.data__fieldset
+									input(type='email', name='email', required).data__input
+									label(for="email").data__label Email
+								.data__footer
+									button(type="submit").btn-small Subscribe
+
+
