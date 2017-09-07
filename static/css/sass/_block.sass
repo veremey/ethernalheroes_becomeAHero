@@ -35,6 +35,10 @@
 	&__footer
 		display: flex
 		justify-content: space-between
+		+r(800)
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
 	&__link
 		position: relative
 		display: inline-block
@@ -46,6 +50,10 @@
 		color: $text
 		+al
 		+tr(.4s)
+		+r(650)
+			display: block
+			margin: 0 0 20px
+
 		&:hover
 			color: $blue
 			border-color: $blue
@@ -67,6 +75,8 @@
 			top: auto
 			bottom: 0
 			right: -300px
+		+r(650)
+			right: -150px
 
 .timer
 	margin-bottom: 50px
@@ -81,10 +91,14 @@
 		&_item
 			display: inline-block
 			margin-right: 25px
+			+r(650)
+				margin-right: 16px
 			span
 				font-size: 55px
 				color: $text
 				+al
+				+r(650)
+					font-size: 10vw
 
 .tag
 	margin-top: auto
