@@ -1,5 +1,27 @@
 .header .half
 	transform: none
+
+.header-mail
+	.navigator
+		height: 100%
+		top: 0%
+		right: 20px
+	.select
+		top: 46px
+		+tr(.8s)
+		// +r(900)
+		// 	top: -5px
+	.user
+		+r(900)
+			display: inline-block
+
+.header-fix
+	.half_end
+		.select
+			top: 16px
+			+r(880)
+				top: -7px
+
 .no-transforms
 	transform: none !important
 	transition: none !important
