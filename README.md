@@ -1,4 +1,4 @@
-# юТека
+# ethernalheroes_becomeAHero
 
 ## Technologies
 
@@ -44,16 +44,7 @@ Email: [veremey4uk@gmail.com](mailto:veremey4uk@gmail.com)
 
 * Анимация лейбла для формы [classie.js](https://github.com/desandro/classie)
 
-* Кастомный скролл [jquery.mCustomScrollbar.js](http://manos.malihu.gr/jquery-custom-content-scroller)
+* Анимация появления елементов [ScrollMagic.io](http://scrollmagic.io)
 
-Изменения:
+* Паралакс [ScrollMagic.io](http://scrollmagic.io/examples/advanced/parallax_sections.html)
 
-  ☐ layout.mod_empty => layout_empty
-  ☐ .mod_last => .mod-last
-  ☐ .mod_offsetTop20 => .mod-offset_top_20
-  ☐ .mod_offsetTop => .mod-offset_top
-  ☐ .mod_margin_01 => .mod-margin_01
-  ☐ .mod_aside => .mod-aside
-  ☐ .mod_heart => .check_heart  ( js )
-
--- test commit for gitlab ci
