@@ -113,33 +113,6 @@ $(document).ready(function () {
 			// }
 		})
 
-	// if($(document).width() > 677) {
-	// 	Global_main.fourSlider({
-	// 		slider: '.doc_correct',
-	// 		item: '.read'
-	// 	});
-	// }
-
-
-
-	// $('.doc_correct').slick({
-	// 	infinite: false,
-	// 	variableWidth: true,
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 651,
-	// 			settings: {
-	// 				infinite: false,
-	// 				variableWidth: true,
-	// 			}
-	// 		},
-	// 		{
-	// 			breakpoint: 650,
-	// 			settings: "unslick"
-	// 		}
-	// 	]
-	// });
-
 	runSlick();
 
 });
