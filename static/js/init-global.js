@@ -4,10 +4,10 @@ $(function () {
 		countdown: '.timer__box'
 	});
 
-	Global_main.sliderSimple({
-		slider: '.slide',
-		item: '.slide__item'
-	});
+	// Global_main.sliderSimple({
+	// 	slider: '.slide',
+	// 	item: '.slide__item'
+	// });
 
 	Global_main.sliderfade({
 		slider: '.details',

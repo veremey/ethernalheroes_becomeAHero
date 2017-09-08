@@ -51,8 +51,10 @@ block content
 					.slide__item
 						.slide__pic
 							.startscreen__video
-								video.video(muted='muted', loop='loop', autoplay='autoplay')
+								video#video.video(muted='muted', loop='loop', autoplay='autoplay')
+									//- video.video(video autoplay loop muted="")
 									source(src='static/img/desk.mp4', type='video/mp4')
+									source(src='static/img/desk.webm', type='video/webm')
 									|   Your browser does not support HTML5 video.
 								canvas.canvas
 

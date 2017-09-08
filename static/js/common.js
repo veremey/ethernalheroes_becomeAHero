@@ -120,22 +120,33 @@ $(document).ready(function () {
 
 	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
-	if (isIOS) {
-		var canvasVideo = new CanvasVideoPlayer({
-			videoSelector: '.video',
-			canvasSelector: '.canvas',
-			timelineSelector: false,
-			autoplay: true,
-			makeLoop: true,
-			pauseOnClick: false,
-			audio: false
-		});
+	var $vid = function () {
 
-	}else {
-		// Use HTML5 video
-		document.querySelectorAll('.canvas')[0].style.display = 'none';
+		if (isIOS) {
+			var canvasVideo = new CanvasVideoPlayer({
+				videoSelector: '.video',
+				canvasSelector: '.canvas',
+				timelineSelector: false,
+				autoplay: true,
+				makeLoop: true,
+				pauseOnClick: false,
+				audio: false
+			});
 
-	}
+		}else {
+			// Use HTML5 video
+			document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+		}
+	};
+
+	$vid();
+
+	$('.slide').on("init", function (event, slick) {
+		// $('.video').play();
+		$vid();
+	});
+
 
 	if($('.slide__item').length > 1) {
 		$('.slide').slick({
@@ -155,9 +166,20 @@ $(document).ready(function () {
 		});
 	}
 
-	$('.video').play();
+	$('.slide').on('afterChange', function(event, slick, currentSlide){
+		if (currentSlide == 0) {
+			$('.slide').slick('slickPause');
+			$('#video')[0].play();
+		}
+	});
 
-//
+		document.getElementById('video').addEventListener('ended',myHandler,false);
+
+	function myHandler(e) {
+		$('.slide').slick('slickPlay');
+		}
+
+
 });
 
 // $(window).ready(function () {
@@ -181,6 +203,8 @@ $(document).ready(function () {
 // 		document.querySelectorAll('.canvas')[0].style.display = 'none';
 
 // 	}
+
+// 	// $('.video').play();і
 
 // });
 
