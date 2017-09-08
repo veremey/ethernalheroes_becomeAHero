@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 	$('.scroll-next').on('click', function () {
 		// var $link = $(opt.link);
@@ -113,10 +114,13 @@ $(document).ready(function () {
 			// }
 		})
 
+
+	runSlick();
+
+
 	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
 	if (isIOS) {
-
 		var canvasVideo = new CanvasVideoPlayer({
 			videoSelector: '.video',
 			canvasSelector: '.canvas',
@@ -128,15 +132,59 @@ $(document).ready(function () {
 		});
 
 	}else {
-
 		// Use HTML5 video
 		document.querySelectorAll('.canvas')[0].style.display = 'none';
 
 	}
 
-	runSlick();
+	if($('.slide__item').length > 1) {
+		$('.slide').slick({
+			infinite: false,
+			speed: 300,
+			slidesToShow: 1,
+			variableWidth: true,
+			responsive: [
+				{
+					breakpoint: 880,
+					settings: {
+						variableWidth: false,
+						arrows: false
+					}
+				}
+			]
+		});
+	}
 
+	$('.video').play();
+
+//
 });
+
+// $(window).ready(function () {
+
+
+// 	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+// 	if (isIOS) {
+// 		var canvasVideo = new CanvasVideoPlayer({
+// 			videoSelector: '.video',
+// 			canvasSelector: '.canvas',
+// 			timelineSelector: false,
+// 			autoplay: true,
+// 			makeLoop: true,
+// 			pauseOnClick: false,
+// 			audio: false
+// 		});
+
+// 	}else {
+// 		// Use HTML5 video
+// 		document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+// 	}
+
+// });
+
+
 
 var runSlick = function () {
 	$('.doc_correct').slick({
@@ -156,8 +204,6 @@ var runSlick = function () {
 			}
 		]
 	});
-
-
 
 }
 
