@@ -135,8 +135,12 @@ $(document).ready(function () {
 
 		}else {
 			// Use HTML5 video
+			// document.querySelectorAll('.canvas')[0].style.display = 'none';
+			if($('.js-video').length) {
+				document.querySelectorAll('.canvas')[0].style.display = 'none';
+				document.querySelectorAll('.canvas')[1].style.display = 'none';
+			}
 			document.querySelectorAll('.canvas')[0].style.display = 'none';
-			document.querySelectorAll('.canvas')[1].style.display = 'none';
 		}
 	};
 
