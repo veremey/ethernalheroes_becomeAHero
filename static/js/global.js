@@ -105,28 +105,26 @@ function GlobalMainClass() {
 	/* ----- slider fade ----*/
 	/* -----------------------------------------------------------------------------------*/
 	this.sliderfade = function (opt) {
-		// $(document).ready(function () {
-			var $slider = $(opt.slider);
-			var $item = $(opt.item);
+		var $slider = $(opt.slider);
+		var $item = $(opt.item);
 
-			if($item.length > 1) {
-				$slider.slick({
-					infinite: false,
-					// speed: 300,
-					slidesToShow: 1,
-					fade: true,
-					responsive: [
-						{
-							breakpoint: 880,
-							settings: {
-								variableWidth: true,
-								fade: false
-							}
+		if($item.length > 1) {
+			$slider.slick({
+				infinite: false,
+				// speed: 300,
+				slidesToShow: 1,
+				fade: true,
+				responsive: [
+					{
+						breakpoint: 880,
+						settings: {
+							variableWidth: false,
+							fade: false
 						}
-					]
-				});
-			}
-		// });
+					}
+				]
+			});
+		}
 	}
 
 	/* ----- halfSlider -----------*/
@@ -160,11 +158,39 @@ function GlobalMainClass() {
 			var $slider = $(this);
 			var $item = $(this).find(opt.item);
 
+			// if($item.length > 4) {
 				$(this).slick({
 				infinite: false,
-				// slidesToShow: 4,
-				variableWidth: true
+				variableWidth: false,
+				slidesToShow: 4,
+				responsive: [
+					{
+						breakpoint: 1200,
+						settings: {
+							variableWidth: false,
+							slidesToShow: 3,
+							arrows: false
+						}
+					},
+					{
+						breakpoint: 1000,
+						settings: {
+							variableWidth: true,
+							slidesToShow: 2,
+							arrows: false
+						}
+					},
+					{
+						breakpoint: 650,
+						settings: {
+							variableWidth: true,
+							slidesToShow: 1,
+							arrows: false
+						}
+					}
+				]
 				});
+			// }
 
 		})
 

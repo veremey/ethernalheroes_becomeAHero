@@ -30,16 +30,16 @@ $(function () {
 
 	/*--- parallax ---*/
 	/*---------------------------------------------------------------------*/
-	var $parallax;
-	if($(document).width() < 900){
-			$parallax =  false;
-		} else {
-			$parallax = true;
-		}
+	// var $parallax;
+	// if($(document).width() < 900){
+	// 		$parallax =  false;
+	// 	} else {
+	// 		$parallax = true;
+	// 	}
 
-	Global_main.initParallax({
-		parallax: $parallax
-	});
+	// Global_main.initParallax({
+	// 	parallax: $parallax
+	// });
 
 
 });

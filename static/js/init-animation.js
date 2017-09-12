@@ -42,7 +42,7 @@ $(function () {
 					class: 'is-animated'
 				},
 				el8: {
-					selector: '.profile__item',
+					selector: '.profile',
 					triggerHook: 1,
 					class: 'is-animated'
 				}
