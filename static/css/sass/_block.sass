@@ -349,7 +349,7 @@
 		flex-direction: column
 		justify-content: flex-end
 		width: 50%
-		padding-left: 10px
+		// padding-left: 10px
 		padding-bottom: 100px
 		+r(880)
 			display: none
@@ -365,8 +365,12 @@
 		+r(1070)
 			width: 90%
 	&__pic
+		width: 50%
 		font-size: 0
 		text-align: center
+		+r(1070)
+			width: 100%
+
 
 .road
 	+r(1070)
@@ -376,9 +380,12 @@
 		padding-bottom: 20px
 	&__item
 		position: relative
-		padding-bottom: 84px
+		padding-bottom: 78px
 		padding-left: 90px
 		border-left: 1px solid $blue
+		+trx(-90px)
+		+r(1070)
+			+trx(0)
 		+r(650)
 			padding-bottom: 44px
 			padding-left: 46px
@@ -645,6 +652,7 @@
 
 .horizontal
 	text-align: center
+	margin-top: 35px
 	&__list
 		width: 50%
 		display: inline-block
