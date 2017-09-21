@@ -124,6 +124,19 @@ $(document).ready(function () {
 			}
 		})
 
+	if($(document).width() > 1400){
+		var $itm = $('.profile__wrap');
+		var $higher = 0;
+		console.log($itm.length);
+		for (var i = $itm.length - 1; i >= 0; i--) {
+			var $small = $itm.eq(i).outerHeight();
+			if($small > $higher) {
+				$higher = $small;
+			}
+		}
+		$itm.css({'height' : $higher});
+	}
+
 
 	runSlick();
 
