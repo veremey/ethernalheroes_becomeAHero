@@ -165,9 +165,21 @@ function GlobalMainClass() {
 				slidesToShow: 4,
 				responsive: [
 					{
+						breakpoint: 99990,
+						settings: "unslick"
+					},
+					{
+						breakpoint: 1400,
+						settings: {
+							variableWidth: true,
+							slidesToShow: 4,
+							arrows: false
+						}
+					},
+					{
 						breakpoint: 1200,
 						settings: {
-							variableWidth: false,
+							variableWidth: true,
 							slidesToShow: 3,
 							arrows: false
 						}

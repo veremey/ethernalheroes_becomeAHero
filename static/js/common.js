@@ -184,13 +184,21 @@ $(document).ready(function () {
 var runSlick = function () {
 	$('.doc_correct').slick({
 		infinite: false,
-		variableWidth: true,
+		variableWidth: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
 		responsive: [
 			{
-				breakpoint: 651,
+				breakpoint: 1200,
 				settings: {
 					infinite: false,
-					variableWidth: true,
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 920,
+				settings: {
+					slidesToShow: 2,
 				}
 			},
 			{
