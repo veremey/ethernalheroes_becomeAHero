@@ -126,10 +126,6 @@ $(document).ready(function () {
 
 
 	if($(document).width() > 1400){
-		// var $itm = $('.profile__wrap');
-		// var $highter = 0;
-		// var t = 0;
-
 		$('.doc').each(function () {
 			var $highter = 0;
 			var t = 0;
