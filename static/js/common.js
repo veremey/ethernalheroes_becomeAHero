@@ -106,22 +106,21 @@ $(document).ready(function () {
 			var $slider = $(this);
 			var $item = $(this).find('.public__item');
 
-
-				$(this).slick({
-					infinite: false,
-					variableWidth: false,
-					slidesToShow: 2,
-					responsive: [
-						{
-							breakpoint: 880,
-							settings: {
-								// variableWidth: true,
-								slidesToShow: 1,
-								arrows: false
-							}
+			$(this).slick({
+				infinite: false,
+				variableWidth: false,
+				slidesToShow: 2,
+				responsive: [
+					{
+						breakpoint: 880,
+						settings: {
+							// variableWidth: true,
+							slidesToShow: 1,
+							arrows: false
 						}
-					]
-				});
+					}
+				]
+			});
 
 		})
 
@@ -176,7 +175,7 @@ $(document).ready(function () {
 	$vid();
 
 	$('.slide').on("init", function (event, slick) {
-		$('#video')[0].play();
+		$('#video').play();
 	});
 
 
