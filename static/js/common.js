@@ -176,6 +176,7 @@ $(document).ready(function () {
 
 	$('.slide').on("init", function (event, slick) {
 		$('#video')[0].play();
+		alert('done!');
 	});
 
 
