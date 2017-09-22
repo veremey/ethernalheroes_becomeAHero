@@ -130,7 +130,6 @@ $(document).ready(function () {
 			var $highter = 0;
 			var t = 0;
 			var $itm = $(this).find('.profile__wrap');
-			console.log($itm.length);
 
 			for (var i = $itm.length - 1; i >= 0; i--) {
 				var $small = $itm.eq(i).outerHeight()
@@ -152,8 +151,8 @@ $(document).ready(function () {
 
 		if (isIOS) {
 			var canvasVideo = new CanvasVideoPlayer({
-				videoSelector: '.video',
-				canvasSelector: '.canvas',
+				videoSelector: '.video, #video',
+				canvasSelector: '.canvas, #canv',
 				timelineSelector: false,
 				autoplay: true,
 				makeLoop: true,
@@ -171,11 +170,18 @@ $(document).ready(function () {
 			document.querySelectorAll('.canvas')[0].style.display = 'none';
 		}
 	};
-
 	$vid();
 
+	// $('.video').each(function () {
+	// 	$(this).play();
+	// });
+	// video.addEventListener('canplay', function(e) {
+ //  this.play();
+ // }, false);
+
 	$('.slide').on("init", function (event, slick) {
-		$('#video')[0].play();
+		$('.video')[0].play();
+		$('.video')[1].play();
 		alert('done!');
 	});
 
@@ -248,6 +254,8 @@ $(window).scroll(function(){
 });
 
 $(window).on('resize', function() {
-  $('.public, .profile, .doc_correct').slick('resize');
+  $('.public, .profile, .doc_correct, .slide').slick('resize');
+  $('.video')[0].play();
+	$('.video')[1].play();
 });
 
