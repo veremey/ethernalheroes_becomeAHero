@@ -106,7 +106,7 @@ $(document).ready(function () {
 			var $slider = $(this);
 			var $item = $(this).find('.public__item');
 
-			if($item.length > 2) {
+
 				$(this).slick({
 					infinite: false,
 					variableWidth: false,
@@ -115,13 +115,14 @@ $(document).ready(function () {
 						{
 							breakpoint: 880,
 							settings: {
-								variableWidth: true,
+								// variableWidth: true,
+								slidesToShow: 1,
 								arrows: false
 							}
 						}
 					]
 				});
-			}
+
 		})
 
 
@@ -244,5 +245,9 @@ $(window).scroll(function(){
 	else {
 		$('header').removeClass('header-fix');
 	}
+});
+
+$(window).on('resize', function() {
+  $('.public, .profile, .doc_correct').slick('resize');
 });
 
