@@ -175,7 +175,7 @@ $(document).ready(function () {
 	$vid();
 
 	$('.slide').on("init", function (event, slick) {
-		$('#video').play();
+		$('#video')[0].play();
 	});
 
 
