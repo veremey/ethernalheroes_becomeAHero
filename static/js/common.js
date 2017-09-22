@@ -170,19 +170,38 @@ $(document).ready(function () {
 			document.querySelectorAll('.canvas')[0].style.display = 'none';
 		}
 	};
-	$vid();
 
-	// $('.video').each(function () {
-	// 	$(this).play();
-	// });
-	// video.addEventListener('canplay', function(e) {
- //  this.play();
- // }, false);
+	var $vidNext = function () {
+
+		if (isIOS) {
+			var canvasVideo = new CanvasVideoPlayer({
+				videoSelector: '#video',
+				canvasSelector: '#canv',
+				timelineSelector: false,
+				autoplay: true,
+				makeLoop: true,
+				pauseOnClick: false,
+				audio: false
+			});
+
+		}else {
+			// Use HTML5 video
+			// document.querySelectorAll('.canvas')[0].style.display = 'none';
+			if($('.js-video').length) {
+				document.querySelectorAll('.canvas')[0].style.display = 'none';
+				document.querySelectorAll('.canvas')[1].style.display = 'none';
+			}
+			document.querySelectorAll('.canvas')[0].style.display = 'none';
+		}
+	};
+	$vid();
+	$vidNext();
 
 	$('.slide').on("init", function (event, slick) {
-		$('.video')[0].play();
-		$('.video')[1].play();
-		alert('done!');
+		 for (var i = $('.video').length - 1; i >= 0; i--) {
+			$('.video')[i].play();
+		}
+		alert('done new!');
 	});
 
 
@@ -235,15 +254,6 @@ var runSlick = function () {
 
 }
 
-// $(window).on('resize', function(){
-//   var width = $(window).width();
-//   if(width > 633) {
-//     // reinit slick while window's width is less than maximum width (641px)
-//     runSlick();
-//   }
-// });
-
-
 $(window).scroll(function(){
 	if ($(window).scrollTop() >= 100) {
 		$('header').addClass('header-fix');
@@ -255,7 +265,14 @@ $(window).scroll(function(){
 
 $(window).on('resize', function() {
   $('.public, .profile, .doc_correct, .slide').slick('resize');
-  $('.video')[0].play();
-	$('.video')[1].play();
+  for (var i = $('.video').length - 1; i >= 0; i--) {
+  	$('.video')[i].play();
+  }
+});
+$(window).on('orientationchange', function() {
+  $('.public, .profile, .doc_correct, .slide').slick('resize');
+  for (var i = $('.video').length - 1; i >= 0; i--) {
+  	$('.video')[i].play();
+  }
 });
 
