@@ -21,7 +21,7 @@ block content
 					i.icon-mouse
 					span.section__desc_small Scroll
 				.startscreen__video
-					video#video-start.video(muted='muted', loop='loop', autoplay='autoplay')
+					video#video-start.video(muted='muted', loop='loop', autoplay='autoplay', autobuffer)
 						source(src='static/img/Paladin_Preview_crop.mp4', type='video/mp4')
 						|   Your browser does not support HTML5 video.
 					//- canvas.canvas
@@ -55,7 +55,7 @@ block content
 					.slide__item
 						.slide__pic
 							.slide__video
-								video#video.video(muted='muted', loop='loop')
+								video#video.video(muted='muted', loop='loop', autoplay='autoplay', autobuffer)
 									//- video.video(video autoplay loop muted="")
 									source(src='static/img/desk.mp4', type='video/mp4')
 									source(src='static/img/desk.webm', type='video/webm')
