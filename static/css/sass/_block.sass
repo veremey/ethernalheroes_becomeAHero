@@ -101,6 +101,7 @@
 		top: 0px
 		right: 35%
 		+trx(50%)
+		width: auto
 		height: 100%
 		pointer-events: none
 		+r(1070)
@@ -111,11 +112,10 @@
 		+r(880)
 			position: absolute
 			bottom: 0
-		@media screen and (max-device-width: 800px) and (orientation: landscape)
-			height: 100%
-			top: 55px
 		+r(650)
 			right: 85%
+		@media screen and (max-device-width: 800px) and (orientation: landscape)
+			height: 100%
 
 .timer
 	margin-bottom: 50px

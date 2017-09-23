@@ -121,7 +121,6 @@ $(document).ready(function () {
 					}
 				]
 			});
-
 		})
 
 
@@ -144,58 +143,63 @@ $(document).ready(function () {
 
 	runSlick();
 
+	for (var i = $('.video').length - 1; i >= 0; i--) {
+  	$('.video')[i].play();
+  }
 
-	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
-	var $vid = function () {
 
-		if (isIOS) {
-			var canvasVideo = new CanvasVideoPlayer({
-				videoSelector: '.video, #video',
-				canvasSelector: '.canvas, #canv',
-				timelineSelector: false,
-				autoplay: true,
-				makeLoop: true,
-				pauseOnClick: false,
-				audio: false
-			});
+	// var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
-		}else {
-			// Use HTML5 video
-			// document.querySelectorAll('.canvas')[0].style.display = 'none';
-			if($('.js-video').length) {
-				document.querySelectorAll('.canvas')[0].style.display = 'none';
-				document.querySelectorAll('.canvas')[1].style.display = 'none';
-			}
-			document.querySelectorAll('.canvas')[0].style.display = 'none';
-		}
-	};
+	// var $vid = function () {
 
-	var $vidNext = function () {
+	// 	if (isIOS) {
+	// 		var canvasVideo = new CanvasVideoPlayer({
+	// 			videoSelector: '.video',
+	// 			canvasSelector: '.canvas',
+	// 			timelineSelector: false,
+	// 			autoplay: true,
+	// 			makeLoop: true,
+	// 			pauseOnClick: false,
+	// 			audio: false
+	// 		});
 
-		if (isIOS) {
-			var canvasVideo = new CanvasVideoPlayer({
-				videoSelector: '#video',
-				canvasSelector: '#canv',
-				timelineSelector: false,
-				autoplay: true,
-				makeLoop: true,
-				pauseOnClick: false,
-				audio: false
-			});
+	// 	}else {
+	// 		// Use HTML5 video
+	// 		// document.querySelectorAll('.canvas')[0].style.display = 'none';
+	// 		if($('.js-video').length) {
+	// 			document.querySelectorAll('.canvas')[0].style.display = 'none';
+	// 			document.querySelectorAll('.canvas')[1].style.display = 'none';
+	// 		}
+	// 		document.querySelectorAll('.canvas')[0].style.display = 'none';
+	// 	}
+	// };
 
-		}else {
-			// Use HTML5 video
-			// document.querySelectorAll('.canvas')[0].style.display = 'none';
-			if($('.js-video').length) {
-				document.querySelectorAll('.canvas')[0].style.display = 'none';
-				document.querySelectorAll('.canvas')[1].style.display = 'none';
-			}
-			document.querySelectorAll('.canvas')[0].style.display = 'none';
-		}
-	};
-	$vid();
-	$vidNext();
+	// var $vidNext = function () {
+
+	// 	if (isIOS) {
+	// 		var canvasVideo = new CanvasVideoPlayer({
+	// 			videoSelector: '#video',
+	// 			canvasSelector: '#canv',
+	// 			timelineSelector: false,
+	// 			autoplay: true,
+	// 			makeLoop: true,
+	// 			pauseOnClick: false,
+	// 			audio: false
+	// 		});
+
+	// 	}else {
+	// 		// Use HTML5 video
+	// 		// document.querySelectorAll('.canvas')[0].style.display = 'none';
+	// 		if($('.js-video').length) {
+	// 			document.querySelectorAll('.canvas')[0].style.display = 'none';
+	// 			document.querySelectorAll('.canvas')[1].style.display = 'none';
+	// 		}
+	// 		document.querySelectorAll('.canvas')[0].style.display = 'none';
+	// 	}
+	// };
+	// $vidNext();
+	// $vid();
 
 	$('.slide').on("init", function (event, slick) {
 		 for (var i = $('.video').length - 1; i >= 0; i--) {

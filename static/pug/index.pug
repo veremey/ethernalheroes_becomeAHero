@@ -24,7 +24,7 @@ block content
 					video#video-start.video(muted='muted', loop='loop', autoplay='autoplay')
 						source(src='static/img/Paladin_Preview_crop.mp4', type='video/mp4')
 						|   Your browser does not support HTML5 video.
-					canvas.canvas
+					//- canvas.canvas
 
 				.share.header__share
 					a(href="#").share__link
@@ -58,9 +58,10 @@ block content
 								video#video.video(muted='muted', loop='loop')
 									//- video.video(video autoplay loop muted="")
 									source(src='static/img/desk.mp4', type='video/mp4')
-									//- source(src='static/img/desk.webm', type='video/webm')
+									source(src='static/img/desk.webm', type='video/webm')
+									source(src='static/img/desk.ogv', type='video/ogg')
 									|   Your browser does not support HTML5 video.
-								canvas.canvas#canv
+								//- canvas.canvas#canv
 
 						.slide__info
 							p.slide__num 1

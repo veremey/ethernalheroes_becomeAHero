@@ -10,8 +10,8 @@ gulp.task('server', function() {
         files: [config.dest.root + '*.html', config.dest.css + '*.css', config.dest.js + '*.js'],
         port: 8080,
         notify: false,
-        ghostMode: false,
-        online: false,
-        open: true
+        // ghostMode: false,
+        // online: false,
+        // open: true
     });
 });
