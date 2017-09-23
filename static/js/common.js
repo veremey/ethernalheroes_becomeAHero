@@ -152,11 +152,42 @@ $(document).ready(function () {
 	    });
 	});
 	// -----------================================---------------
+	// -----------================================---------------
+	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+	var $vid = function () {
+
+		if (isIOS) {
+			var canvasVideo = new CanvasVideoPlayer({
+				videoSelector: '.video',
+				canvasSelector: '.canvas',
+				timelineSelector: false,
+				autoplay: true,
+				makeLoop: true,
+				pauseOnClick: false,
+				audio: false
+			});
+			document.querySelectorAll('.canvas')[0].style.display = 'none';
+			document.querySelectorAll('.canvas')[1].style.display = 'none';
+		}else {
+			// Use HTML5 video
+			document.querySelectorAll('.canvas')[0].style.display = 'none';
+			document.querySelectorAll('.canvas')[1].style.display = 'none';
+		}
+	};
+
+	$vid();
+
+	// -----------================================---------------
+	// -----------================================---------------
 
 
 
 
 	$('.slide').on("init", function (event, slick) {
+
+		$('#video')[0].play();
+		$('#video-start')[0].play();
 
 		$('video').each(function () {
 			this.play();
