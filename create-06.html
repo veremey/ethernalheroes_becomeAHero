@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+  <head>
+    <meta charset="utf-8">
+    <title>ethernal heroes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="static/img/favicon.png">
+    <link rel="stylesheet" media="all" href="static/css/font-awesome.css">
+    <link rel="stylesheet" media="all" href="static/css/style.css">
+    <script src="static/js/lib/jquery.js"></script>
+    <script src="static/js/lib/slick.min.js"></script>
+    <script src="static/js/lib/slick.min.js"></script>
+    <script src="static/js/lib/jquery.countdown.min.js"></script>
+    <script src="static/js/lib/classie.js"></script>
+    <script src="static/js/lib/jquery.validate.min.js"></script>
+    <script src="static/js/lib/jquery.formatter.min.js"></script>
+    <script src="static/js/lib/TweenMax.min.js"></script>
+    <script src="static/js/lib/ScrollMagic.js"></script>
+    <script src="static/js/lib/animation.gsap.js"></script>
+    <script src="static/js/lib/canvas-video-player.js"></script>
+    <script src="static/js/global.js"></script>
+    <script src="static/js/animation.js"></script>
+    <script src="static/js/init-global.js"></script>
+    <script src="static/js/init-validate.js"></script>
+    <script src="static/js/init-select.js"></script>
+    <script src="static/js/init-animation.js"></script>
+    <script src="static/js/common.js"></script>
+  </head>
+  <body class="is-animated">
+    <!--BEGIN out-->
+    <div class="out intro">
+      <header class="header header-mail">
+        <div class="layout header_inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="static/img/logo.png" alt="logo">
+          </a>
+          <div class="half half_end">
+            <div class="navigator">
+              <div class="user">
+                <a class="user__mail" href="#">ipad.surf@gmail.com</a>
+              </div>
+              <div class="select js-select">
+                <span class="select__text js-select-text" data-strt="En">En</span>
+                <input class="js-select-input" type="hidden" value="0" name="lang">
+                <ul class="select__list sdw js-select-list">
+                  <li class="is-active">En</li>
+                  <li>Ru</li>
+                  <li>Cn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section-light is-animated">
+        <div class="layout popup__center">
+          <div class="intro__box">
+            <p class="intro__num mod-last">6</p>
+            <h5 class="title-section">Enter your ETH
+              <br> wallet address</h5>
+            <div class="intro__text">
+              <form class="wallet__form js-validate top-offset-40" method="POST" action="/" autocomplete="on">
+                <fieldset class="wallet__fieldset">
+                  <input class="wallet__input js-wallet" type="text" name="Eth" required="" aria-required="true">
+                  <label class="wallet__label" for="Eth">ETH address</label>
+                </fieldset>
+              </form>
+              <div class="intro-between">
+                <p class="section__desc section__desc">Token balance:
+                  <a class="section__link" href="#">0.00000</a>
+                </p>
+                <a class="btn-small" href="#">Check balance</a>
+              </div>
+            </div>
+            <div class="intro__btn">
+              <a class="btn-transparent" href="create-05.html"> Back</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--END out-->
+  </body>
+</html>

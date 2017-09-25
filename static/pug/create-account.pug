@@ -1,0 +1,23 @@
+extends _layout
+block content
+	.out.intro
+		include layout/header-simple-nomail.pug
+		section.section-light.is-animated
+			.layout.popup__center
+				.intro__box
+					p.intro__num.mod-first 1
+					h5.title-section Create account
+					form(method='POST', action='/', autocomplete='on').data__form.js-validate
+						fieldset.data__fieldset
+							input(type='email', name='email', required).data__input
+							label(for="email").data__label Email
+						fieldset.data__fieldset
+							input(type='password', name='password', required).data__input#password
+							label(for="password").data__label Password
+						fieldset.data__fieldset
+							input(type='password', name='confirm_password', required).data__input
+							label(for="confirm_password").data__label Repeat password
+						.data__footer
+							button(type="submit").btn-small Sign Up
+							p.data__desc Already have an account?
+								a(href="#", data-ppp="js-login").data__link.js-ppp Login

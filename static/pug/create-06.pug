@@ -1,0 +1,22 @@
+extends _layout
+block content
+	.out.intro
+		include layout/header-simple.pug
+		section.section-light.is-animated
+			.layout.popup__center
+				.intro__box
+					p.intro__num.mod-last 6
+					h5.title-section Enter your ETH <br> wallet address
+					.intro__text
+						form.wallet__form.js-validate.top-offset-40(method="POST" action="/" autocomplete="on" )
+							fieldset.wallet__fieldset
+								input.wallet__input.js-wallet(type="text" name="Eth" required="" aria-required="true")
+								label.wallet__label(for="Eth") ETH address
+						.intro-between
+							p.section__desc.section__desc Token balance:
+								a(href="#").section__link 0.00000
+							a(href="#").btn-small Check balance
+
+
+					.intro__btn
+						a(href="create-05.html").btn-transparent  Back

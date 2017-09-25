@@ -1,0 +1,26 @@
+extends _layout
+block content
+	.out.intro
+		include layout/header-simple.pug
+		section.section-light.is-animated
+			.layout.popup__center
+				.intro__box
+					p.intro__num 3
+					h5.title-section Choose your <br> payment type
+					.intro__text
+						p.section__err Do not use f14545exchange wallets.
+						a(href="#").section__link.section__link_small Full instruction
+					.intro__text
+						p.section__desc To buy MNTP with ETH use only:
+							a(href="#").section__link MyEtherWallet
+							|,
+							a(href="#").section__link Mist Wallet
+							|,
+							a(href="#").section__link Parity Wallet
+						p.section__desc To buy MNTP with BTC use only:
+							a(href="#").section__link Bitcoin Core
+							|,
+							a(href="#").section__link Electrum Wallet
+					.intro__btn
+						a(href="#").btn-small Pay with ETH
+						a(href="#").btn-small Pay with BTC

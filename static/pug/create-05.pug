@@ -1,0 +1,20 @@
+extends _layout
+block content
+	.out.intro
+		include layout/header-simple.pug
+		section.section-light.is-animated
+			.layout.popup__center
+				.intro__box
+					p.intro__num 5
+					h5.title-section Send your ETH <br> to this address
+					.intro__text
+						p.section__err GAS LIMIT TO INPUT: 200000
+						a(href="#").section__desc 0x0asd5890slsda42sds36dlk092309dxx98x0x9x8x0c98v
+					.intro__text.intro-start
+						img(src="static/img/qr.png", alt="qr-code").intro__img
+						a(href="#").section__link_small Copy address to clipboard
+
+
+					.intro__btn
+						a(href="create-06.html").btn-small Continue
+						a(href="create-04.html").btn-transparent  Back

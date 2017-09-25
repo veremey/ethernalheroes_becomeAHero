@@ -1,0 +1,22 @@
+extends _layout
+block content
+	.out.intro
+		include layout/header-simple.pug
+		section.section-light.is-animated
+			.layout.popup__center
+				.intro__box
+					p.intro__num 4
+					h5.title-section Enter your <br> ETH address
+					.intro__text
+						p.section__err Do not use exchange wallets.
+						a(href="#").section__link_small Full instruction
+					.intro__text
+						form.wallet__form.js-validate.top-offset-40(method="POST" action="/" autocomplete="on" )
+							fieldset.wallet__fieldset
+								input.wallet__input.js-wallet(type="tel" name="Eth" required="" aria-required="true")
+								label.wallet__label(for="Eth") Your contributions in ETH
+						p.section__desc.section__desc_small Enter your ETH address you will invest from. Tokens will be allocated to this address. Don not use the <br> addresses of wallets you do not own private keys from. Otherwise you will not be able to access your tokens.
+
+					.intro__btn
+						a(href="create-05.html").btn-small Continue
+						a(href="create-03.html").btn-transparent  Back

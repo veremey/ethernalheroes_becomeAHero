@@ -1,0 +1,91 @@
+.intro
+	&__box
+		position: relative
+		display: inline-block
+		width: 66%
+		margin-left: 33%
+		+r(800)
+			width: 100%
+			padding: 0 10px
+			margin-left: 0
+	&__num
+		position: absolute
+		top: 0
+		left: -22%
+		width: 40px
+		height: 40px
+		border: 1px solid $border
+		border-radius: 100%
+		text-align: center
+		line-height: 40px
+		+r(800)
+			left: 0
+			top: -15vh
+			&:before,
+			&:after
+				content: none
+		&:after
+			content: ''
+			position: absolute
+			top: 100%
+			left: 50%
+			+trx(-50%)
+			width: 1px
+			height: 100vh
+			background-color: $border
+		&:before
+			content: ''
+			position: absolute
+			bottom: 100%
+			left: 50%
+			+trx(-50%)
+			width: 1px
+			height: 100vh
+			background-color: $border
+		&.mod-first
+			&:before
+				content: none
+		&.mod-last
+			&:after
+				content: none
+	&__text
+		margin-bottom: 30px
+		.section__desc
+			margin-bottom: 10px
+	&__btn
+		font-size: 0
+		.btn-small
+			margin-right: 20px
+			margin-bottom: 16px
+	&-start
+		display: flex
+		align-items: center
+	&-between
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__img
+		margin-right: 30px
+
+	.section
+		&-light
+			height: 100vh
+		&-inner
+			width: 100%
+	.popup__center
+		height: 100%
+		+r(800)
+			align-items: flex-start
+			padding-top: 23vh
+	.title-section
+		margin-bottom: 30px
+	.wallet__form
+		padding-top: 0
+	.btn-small
+		white-space: nowrap
+	.data__footer
+		.data__desc
+			font-size: 16px
+			+r(800)
+				width: 100%
+				margin-top: 70px

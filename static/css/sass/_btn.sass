@@ -47,7 +47,8 @@
 				border-top: none
 				transform-origin: bottom center
 				+rotate(-42)
-	&-small
+	&-small,
+	&-transparent
 		display: inline-block
 		padding: 15px 28px 16px
 		background-color: $blue
@@ -62,3 +63,6 @@
 		&:hover
 			background-color: $text
 			color: $border
+	&-transparent
+		background-color: $n
+		border: 1px solid $border

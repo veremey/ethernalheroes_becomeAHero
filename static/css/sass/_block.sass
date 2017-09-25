@@ -161,7 +161,8 @@
 		margin-left: 20px
 
 .section
-	&__desc
+	&__desc,
+	&__link
 		font-size: 24px
 		letter-spacing: .02em
 		color: $text
@@ -184,6 +185,22 @@
 
 			margin-right: 26px
 			text-transform: uppercase
+	&__link
+		color: $blue
+		+tr(.4s)
+		&:hover
+			color: $text
+		&_small
+			color: $blue
+			+tr(.4s)
+			&:hover
+				color: $text
+	&__err
+		font-size: 16px
+		color: #f14545
+		+al
+		margin-bottom: 5px
+
 	&-box
 		width: 80%
 		margin: 40px 0
