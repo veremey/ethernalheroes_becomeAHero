@@ -123,23 +123,21 @@ $(document).ready(function () {
 			});
 		})
 
-
 	// if($(document).width() > 1400){
-		$('.doc').each(function () {
-			var $highter = 0;
-			var t = 0;
-			var $itm = $(this).find('.profile__wrap');
+	$('.doc').each(function () {
+		var $highter = 0;
+		var t = 0;
+		var $itm = $(this).find('.profile__wrap');
 
-			for (var i = $itm.length - 1; i >= 0; i--) {
-				var $small = $itm.eq(i).outerHeight()
-				if($small > $highter) {
-					$highter = $small;
-				}
+		for (var i = $itm.length - 1; i >= 0; i--) {
+			var $small = $itm.eq(i).outerHeight()
+			if($small > $highter) {
+				$highter = $small;
 			}
-			$itm.css({'height' : $highter});
-		});
+		}
+		$itm.css({'height' : $highter});
+	});
 	// }
-
 
 	runSlick();
 
@@ -152,18 +150,43 @@ $(document).ready(function () {
 	    });
 	});
 	// -----------================================---------------
+	// -----------================================---------------
 
+	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
+	var $vid = function () {
 
+		if (isIOS) {
+			var canvasVideo = new CanvasVideoPlayer({
+				videoSelector: '#video-start',
+				canvasSelector: '.canvas',
+				timelineSelector: false,
+				autoplay: true,
+				makeLoop: true,
+				pauseOnClick: false,
+				audio: false
+			});
+
+		} else {
+			// Use HTML5 video
+			$('.canvas').eq(0).css({'display' : 'none'});
+		}
+	};
+
+	$vid();
+
+	// -----------================================---------------
+	// -----------================================---------------
+	// -----------================================---------------
 
 	$('.slide').on("init", function (event, slick) {
 
 		$('video').each(function () {
 			this.play();
 		});
-		$('video')[0].play();
-		$('video')[1].play();
-
+		for (var i = $('.video').length - 1; i >= 0; i--) {
+			$('.video')[i].play();
+		}
 
 	});
 
@@ -221,8 +244,7 @@ var runSlick = function () {
 $(window).scroll(function(){
 
 	if ($(window).scrollTop() >= 100) {
-		$('header').addClass('header-fix');
-	}
+		$('header').addClass('header-fix');	}
 	else {
 		$('header').removeClass('header-fix');
 	}

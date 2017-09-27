@@ -21,10 +21,11 @@ block content
 					i.icon-mouse
 					span.section__desc_small Scroll
 				.startscreen__video
-					video#video-start.video(muted='muted', loop='loop', autoplay='autoplay', autobuffer)
+					video#video-start.video(muted='muted', loop='loop', autoplay='autoplay')
 						source(src='static/img/Paladin_Preview_crop.mp4', type='video/mp4')
+						source(src='static/img/Paladin_Preview_crop.webm', type='video/webm')
 						|   Your browser does not support HTML5 video.
-					//- canvas.canvas
+					canvas.canvas
 
 				.share.header__share
 					a(href="#").share__link
@@ -54,14 +55,15 @@ block content
 				.slide
 					.slide__item
 						.slide__pic
-							.slide__video
-								video#video.video(muted='muted', loop='loop', autoplay='autoplay', autobuffer)
-									//- video.video(video autoplay loop muted="")
-									source(src='static/img/desk.mp4', type='video/mp4')
-									source(src='static/img/desk.webm', type='video/webm')
-									source(src='static/img/desk.ogv', type='video/ogg')
-									|   Your browser does not support HTML5 video.
-								//- canvas.canvas#canv
+							img(src="static/img/desk.gif", alt="").slide__img
+							//- .slide__video
+							//- 	video#video.video(muted='muted', loop='loop', autoplay='autoplay', autobuffer)
+							//- 		//- video.video(video autoplay loop muted="")
+							//- 		source(src='static/img/desk.mp4', type='video/mp4')
+							//- 		source(src='static/img/desk.webm', type='video/webm')
+							//- 		source(src='static/img/desk.ogv', type='video/ogg')
+							//- 		|   Your browser does not support HTML5 video.
+							//- 	//- canvas.canvas#canv
 
 						.slide__info
 							p.slide__num 1
