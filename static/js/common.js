@@ -161,11 +161,17 @@ $(document).ready(function () {
 				videoSelector: '#video-start',
 				canvasSelector: '.canvas',
 				timelineSelector: false,
-				autoplay: true,
+				autoplay: false,
 				makeLoop: true,
 				pauseOnClick: false,
-				audio: false
+				audio: false,
+
+				// ad for IOS loop video
+				resetOnLastFrame: true,
+				loop: false,
 			});
+
+			canvasVideo.play();
 
 		} else {
 			// Use HTML5 video
