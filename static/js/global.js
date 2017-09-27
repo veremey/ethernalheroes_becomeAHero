@@ -173,7 +173,7 @@ function GlobalMainClass() {
 						settings: {
 							variableWidth: true,
 							slidesToShow: 4,
-							arrows: false
+							arrows: true
 						}
 					},
 					{
@@ -181,7 +181,7 @@ function GlobalMainClass() {
 						settings: {
 							variableWidth: true,
 							slidesToShow: 3,
-							arrows: false
+							arrows: true
 						}
 					},
 					{
@@ -189,7 +189,7 @@ function GlobalMainClass() {
 						settings: {
 							variableWidth: true,
 							slidesToShow: 2,
-							arrows: false
+							arrows: true
 						}
 					},
 					{
@@ -197,7 +197,7 @@ function GlobalMainClass() {
 						settings: {
 							variableWidth: true,
 							slidesToShow: 1,
-							arrows: false
+							arrows: true
 						}
 					}
 				]

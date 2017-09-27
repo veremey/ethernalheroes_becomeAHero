@@ -116,7 +116,7 @@ $(document).ready(function () {
 						settings: {
 							// variableWidth: true,
 							slidesToShow: 1,
-							arrows: false
+							arrows: true
 						}
 					}
 				]
