@@ -12,7 +12,7 @@ $(document).ready(function() {
 		}
 
 		// [].slice.call( document.querySelectorAll( '.retrieval__input, .feedback__field textarea, .order__input, .data__input, .description__input' ) ).forEach( function( inputEl ) {
-		[].slice.call( document.querySelectorAll( '.data__input, .wallet__input' ) ).forEach( function( inputEl ) {
+		[].slice.call( document.querySelectorAll( '.data__input, .wallet__input, .advantage__input' ) ).forEach( function( inputEl ) {
 			if( inputEl.value.trim() !== '' ) {
 				classie.add( inputEl.parentNode, 'input--filled' );
 			}

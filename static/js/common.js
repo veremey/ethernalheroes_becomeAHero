@@ -1,10 +1,31 @@
 
 $(document).ready(function () {
+
 	$('.scroll-next').on('click', function () {
 		// var $link = $(opt.link);
 		var $window = $('.startscreen').height();
 		$('html, body').animate({scrollTop: $window}, 800);
 	});
+
+	/* ------- range slider------------*/
+	$( "#range-slider" ).slider({
+		range: 'min',
+		min: 0,
+		max: $('.range__end').text(),
+		value: $('.range__current').text()
+	});
+
+	/* ----------- .js-next-sea   ------------------ */
+	$('.js-next-sea').on('click' ,function () {
+		$('.sea').hide().removeClass('is-shown');
+		$(this).parents('.sea').next('.sea').addClass('is-shown').show();
+	});
+
+	/* ----------- space separate num --------- */
+	var num1 = numberWithSpace($('.range__current').text());
+	var num2 = numberWithSpace($('.range__end').text());
+	$('.range__current').text(num1);
+	$('.range__end').text(num2);
 
 	/*----- toggle text -------*/
 	$('.js-toggle-text').on('click', function () {
@@ -270,3 +291,6 @@ $(window).on('orientationchange', function() {
 });
 
 
+function numberWithSpace(x) {
+	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}

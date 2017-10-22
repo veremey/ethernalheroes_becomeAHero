@@ -22,9 +22,10 @@ block content
 							| Apply for presale
 							i.icon-next-blue
 						p.startscreen__desc Bonus 51% is valid <br> before 11&10.17
-					a(href="#").basement
-						span.basement__text Subscribe to gain an advantage!
-							i.icon-next-white
+					.basement
+						a(href="#").basement__link
+							span.basement__text Subscribe to gain an advantage!
+								i.icon-next-white
 				.startscreen__video
 					video#video-start.video(muted='muted', loop='loop', autoplay='autoplay')
 						source(src='static/img/Paladin_Preview_crop.mp4', type='video/mp4')
@@ -32,7 +33,7 @@ block content
 						|   Your browser does not support HTML5 video.
 					canvas.canvas
 
-				.share.header__share
+				.share.header__share.share-b
 					a(href="#").share__link
 						i.fa.fa-paper-plane-o
 					a(href="#").share__link

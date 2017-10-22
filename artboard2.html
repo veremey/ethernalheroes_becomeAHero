@@ -30,21 +30,24 @@
   </head>
   <body class="is-animated">
     <!--BEGIN out-->
-    <div class="out intro">
-      <header class="header header-mail">
-        <div class="layout header_inner">
-          <a class="logo" href="index.html">
-            <img class="logo__img" src="static/img/logo.png" alt="logo">
-          </a>
-        </div>
-      </header>
-      <section class="section-light is-animated">
-        <div class="layout popup__center">
-          <div class="intro__box">
-            <p class="intro__num">2</p>
-            <h5 class="title-section">One more thing</h5>
-            <p class="section__desc">You successfully registered. Please check your</p>
-            <p class="section__desc"> email ipad.surf@gmail.com and confirm registration</p>
+    <div class="out out_center">
+      <section class="screen is-animated">
+        <div class="advantage">
+          <div class="layout section-inner">
+            <div class="half half_l">
+              <h2 class="title-section mod-white">Subscribe to
+                <br> gain an advantage!</h2>
+            </div>
+            <div class="half half_r half_flex">
+              <form class="advantage__form js-validate" action="/" method="POST" autocomplete="on">
+                <fieldset class="advantage__fieldset">
+                  <input class="advantage__input" type="email" name="email" placeholder="">
+                  <label class="advantage__label" for="email">
+                    <span>Enter your&nbsp;</span>email</label>
+                </fieldset>
+                <button class="btn-small" type="submit">Send</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

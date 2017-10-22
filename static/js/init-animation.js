@@ -163,6 +163,22 @@ $(function () {
 
 
 		Animation.initGlobalAnimations({
+			container: '.screen',
+			selfTriggeredElems: {
+				el1: {
+					selector: '.half',
+					triggerHook: 0.9,
+					class: 'is-animated'
+				},
+				el2: {
+					selector: '.title-section',
+					triggerHook: 0.9,
+					class: 'is-animated'
+				}
+			}
+		});
+
+		Animation.initGlobalAnimations({
 			container: '.partners',
 			selfTriggeredElems: {
 				el1: {

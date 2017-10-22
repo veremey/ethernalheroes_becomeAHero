@@ -30,22 +30,33 @@
   </head>
   <body class="is-animated">
     <!--BEGIN out-->
-    <div class="out intro">
-      <header class="header header-mail">
-        <div class="layout header_inner">
-          <a class="logo" href="index.html">
-            <img class="logo__img" src="static/img/logo.png" alt="logo">
+    <div class="out out_center">
+      <a class="btn-close is-active js-toggler" href="#" data-toggler="toggle-some-div"></a>
+      <div class="page layout">
+        <img src="static/img/page.jpg" alt="">
+      </div>
+      <section class="fixed-bottom">
+        <div class="sea">
+          <a class="sea__link js-next-sea" href="#">
+            <h5 class="title-m">Get the full version of White Paper
+              <i class="icon-next-white"></i>
+            </h5>
           </a>
         </div>
-      </header>
-      <section class="section-light is-animated">
-        <div class="layout popup__center">
-          <div class="intro__box">
-            <p class="intro__num">2</p>
-            <h5 class="title-section">One more thing</h5>
-            <p class="section__desc">You successfully registered. Please check your</p>
-            <p class="section__desc"> email ipad.surf@gmail.com and confirm registration</p>
+        <div class="sea sea-p" style="display: none;">
+          <h5 class="title-m">This is a short version of White Paper for getting to know the project
+            <br> Get the full version of White Paper</h5>
+          <div class="sea__wrap">
+            <form class="advantage__form js-validate" action="/" method="POST" autocomplete="on">
+              <fieldset class="advantage__fieldset">
+                <input class="advantage__input" type="email" name="email" placeholder="">
+                <label class="advantage__label" for="email">
+                  <span>Enter your&nbsp;</span>email</label>
+              </fieldset>
+              <button class="btn-small" type="submit">Send</button>
+            </form>
           </div>
+          <p class="section__desc section__desc_m">I agree to receive notification letters from EthernalHeroes</p>
         </div>
       </section>
     </div>

@@ -41,6 +41,11 @@
 			margin-top: 20px
 		+r(400)
 			align-self: flex-start
+	&__desc
+		text-align: right
+		font-size: 13px
+		color: $text
+		line-height: 1.5
 	&__link
 		position: relative
 		display: inline-block
@@ -117,6 +122,246 @@
 			right: 85%
 		@media screen and (max-device-width: 800px) and (orientation: landscape)
 			height: 100%
+	&-w-450
+		max-width: 450px
+		width: 100%
+		@media screen and (max-device-width: 800px) and (orientation: landscape)
+			margin-top: 00px
+		+r(880)
+			margin-top: 20px
+
+.range
+	width: 100%
+	&__details
+		display: flex
+		width: 100%
+		align-items: center
+		justify-content: space-between
+	&__num
+		position: relative
+		padding-left: 15px
+		&:before
+			content: '$'
+			position: absolute
+			top: 0
+			left: 0
+
+	&__current
+		color: #FFB61B
+
+.ui-slider
+	background-color: #414141
+	margin-bottom: 7px
+.ui-slider-horizontal .ui-slider-range-min
+	background-color: #FFB61B
+
+.basement
+	display: inline-block
+	position: absolute
+	bottom: 0
+	left: 50%
+	+trx(-50%)
+	z-index: 5
+	+r(880)
+		width: 80%
+		min-width: 250px
+	&__link
+		display: block
+		position: relative
+		padding: 14px 24px 12px
+		background-color: #00A6FE
+		+r(400)
+			padding: 14px 10px
+		&:hover
+			opacity: .8
+		&:after
+			content: ''
+			position: absolute
+			top: 0px
+			bottom: 0
+			left: 100%
+			height: 100%
+			width: 100%
+			transform-origin: 0 0
+			transform: rotate(75deg)
+			background-color: #00A6FE
+			z-index: -10
+		&:before
+			content: ''
+			position: absolute
+			top: 0px
+			bottom: 0
+			right: 100%
+			height: 100%
+			width: 100%
+			transform-origin: 100% 0
+			transform: rotate(-75deg)
+			background-color: #00A6FE
+			z-index: -10
+	&__text
+		padding-right: 35px
+		font-size: 26px
+		color: #fff
+		+ab
+		+r(980)
+			display: block
+			text-align: center
+			padding-right: 0
+		.icon-next-white
+			top: 50%
+			right: 26px
+			+try(-50%)
+			+r(980)
+				display: none
+
+.screen
+	display: flex
+	align-items: center
+	height: 100vh
+	width: 100%
+	background-color: #2B2B2B
+
+.advantage
+	width: 100%
+	background-color: #00A6FE
+	padding: 90px 0 96px
+	.half_r
+		+r(1070)
+			margin-top: 20px
+	&__form
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+r(650)
+			margin-top: 20px
+			flex-wrap: wrap
+	&__fieldset
+		position: relative
+		display: flex
+		flex: 1 1 100%
+		margin-top: 5px
+		&.input--filled
+			.advantage__input
+				border-top-color: $n
+				border-left-color: $n
+				border-right-color: $n
+				border-radius: 0
+				font-size: 24px
+			.advantage__label
+				left: 10px
+				top: -14px
+				font-size: 13px
+				text-transform: capitalize
+				span
+					display: none
+		#email-error
+			right: 10px
+			left: auto
+			font-size: 0px
+	&__input
+		width: 100%
+		height: 44px
+		border: 2px solid #fff
+		background-color: $n
+		border-radius: 40px
+		outline: none
+		color: #fff
+		font-size: 24px
+		+tr(.4s)
+		+al
+		+placeholder
+			color: #fff
+			font-size: 24px
+			padding: 0 20px
+			line-height: 44px
+			+al
+		&.has-error
+			border-bottom-color: red
+	&__label
+		position: absolute
+		top: 14px
+		left: 30px
+		color: #fff
+		transition: .4s
+	.btn-small
+		background-color: #fff
+		width: 126px
+		height: 44px
+		color: #00A6FE
+		margin-left: 40px
+		+ab
+		+r(650)
+			margin: 10px 0 0
+		&:hover
+			opacity: .9
+			box-shadow: 0 0 6px rgba(255, 255, 255, .9)
+	.title-section
+		margin: 0
+	.half
+		margin-bottom: 0
+
+.whitelist
+	max-width: 455px
+	width: 80%
+	+r(650)
+		width: 100%
+	.title-section
+		margin-bottom: 20px
+	.advantage__form
+		margin: 65px 0 20px
+	.btn-small
+		margin-left: 20px
+		+r(650)
+			margin: 10px 0 0
+
+.page
+	margin-top: 50px
+.sea
+	background-color: #00A6FE
+	text-align: center
+	padding: 30px 0
+	&__wrap
+		width: 90%
+		max-width: 450px
+		margin: 40px auto 10px
+		+r(650)
+			margin: 20px auto 10px
+		.input--filled
+			.advantage__label
+				left: 0
+	&__link
+		display: inline-block
+		&:hover
+			.icon-next-white
+				right: 0px
+	&-p
+		padding: 60px 0 40px
+	.title-m
+		position: relative
+		margin: 0
+		width: auto
+		padding-right: 40px
+		display: inline-block
+		color: #fff
+		+r(650)
+			text-align: center
+			font-size: 7vmin
+			padding-left: 40px
+	.icon-next-white
+		top: 10px
+		right: 5px
+	.btn-small
+		width: 126px
+		background-color: #fff
+		color: #00A5F7
+		margin-left: 20px
+		+ab
+		+r(650)
+			margin: 15px 0 0
+	.section__desc_m
+		color: #3BCBFF
+
 
 .timer
 	margin-bottom: 50px
@@ -186,6 +431,9 @@
 
 			margin-right: 26px
 			text-transform: uppercase
+	&__desc_m
+		color: #8a8787
+		font-size: 13px
 	&__link
 		color: $blue
 		+tr(.4s)
@@ -1020,11 +1268,14 @@
 	+r(880)
 		width: 100%
 		padding-left: 0
+	&.share-b
+		+r(1070)
+			bottom: 120px
 	&__link
 		display: inline-block
 		vertical-align: top
-		&:hover
-			.fa
+		// &:hover
+			// .fa
 
 .header__share
 	position: absolute

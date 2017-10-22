@@ -1,0 +1,20 @@
+extends _layout
+block content
+	.out.out_center
+		section.screen.is-animated
+			.layout.layout-whitelist
+				a(href="#", data-toggler="toggle-some-div").btn-close.is-active.js-toggler
+				.whitelist
+					h2.title-section.mod-white Sign up <br> for whitelist
+					p.section__desc.section__desc_small Leave your email now <br> and get whitelisted
+
+					form(action="/", method="POST", autocomplete="on").advantage__form.js-validate
+						fieldset.advantage__fieldset
+							input(type="email", name="email", placeholder="").advantage__input
+							label(for="email").advantage__label
+								span Enter your&nbsp;
+								| email
+						button(type="submit").btn-small Subscribe
+					p.section__desc.section__desc_m I agree to receive notification letters from EthernalHeroes
+
+

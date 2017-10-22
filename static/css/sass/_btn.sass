@@ -47,6 +47,51 @@
 				border-top: none
 				transform-origin: bottom center
 				+rotate(-42)
+	&-close
+		position: absolute
+		top: 20px
+		right: 20px
+		height: 18px
+		width: 18px
+		display: inline-block
+		background-color: $n
+		border: none
+		outline: none
+		white-space: nowrap
+		// span
+		font-size: $fz
+		letter-spacing: .02em
+		color: $text
+		+r(900)
+			font-size: 0
+			height: 18px
+		&:before
+			content: ''
+			position: absolute
+			top: 8px
+			left: 4px
+
+			width: 24px
+			height: 50%
+			border-top: 2px solid $text
+			border-bottom: none
+			transform-origin: top center
+			+rotate(42)
+		&:after
+			content: ''
+			position: absolute
+			bottom: 8px
+			left: 4px
+
+			height: 50%
+			width: 24px
+
+			border-bottom: 2px solid $text
+			border-top: none
+			transform-origin: bottom center
+			+rotate(-42)
+		&.is-active
+			z-index: 100
 	&-small,
 	&-transparent
 		display: inline-block
